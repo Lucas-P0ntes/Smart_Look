@@ -84,3 +84,24 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessári
 
 ## Algumas Imgens do site :
 
+### Home
+![home1](https://user-images.githubusercontent.com/80328167/172514055-6bffe9b8-ca28-4d4b-b1de-e7f48cab5d9b.PNG)
+
+### Home parte de baixo
+![home2](https://user-images.githubusercontent.com/80328167/172514059-204773d4-7d83-4844-a9e0-7bc2230774f5.PNG)
+
+### Mostrando o campo de denuncias
+![Denuncias](https://user-images.githubusercontent.com/80328167/172514049-4c42d352-532f-4965-8ef8-494ea86bba90.PNG)
+
+### login
+![Login](https://user-images.githubusercontent.com/80328167/172514062-eedff114-57f0-40e4-b527-0b1bbd9e7ae9.PNG)
+
+### Mostrando o DashBoard
+![DashBoard](https://user-images.githubusercontent.com/80328167/172514047-061bc82f-e5ca-4fd4-8d30-2d149804f66f.PNG)
+
+### Mostrando a filtragem do campo
+![Filtragem](https://user-images.githubusercontent.com/80328167/172514051-80b122d6-06d1-47b1-aaf0-bfc40dd1644b.PNG)
+
+
+
+
