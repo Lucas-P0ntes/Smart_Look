@@ -5,24 +5,25 @@
 
 ## O que é ?
 Bem-Vindo ao Smart-Look 
-Esse website tem como obijetivo auxilixar e facilitar denuncias contra lixos/entulhos fazendo a mediação entre população e gorverno.
+Esse website tem como objetivo auxiliar e facilitar denúncias contra lixos/entulhos fazendo a mediação entre população e governo.
 
 ## Como funciona a utilização do site?
-O sistema de denuncia e bem simples.
- 1- O usuario vai entrar no site e fazer o cadastro.
- 2-Após fazer o cadastro o usuario faz o login no site.
- 3-A primeira tela a será um dashboard no qual podera fazer todo o gerenciamento de suas denuncias.
- 4- No dachboard vai ter as opções de criar, deletar, vizualizar e mudar o status da denuncia ( um CRUD  ).
+O sistema de denúncia é bem simples.
+ 1- O usuário vai entrar no site e fazer o cadastro.
+ 2-Após fazer o cadastro o usuário faz o login no site.
+ 3-A primeira tela a será um dashboard no qual poderá fazer todo o gerenciamento de suas denúncias.
+ 4- No dashboard vai ter as opções de criar, deletar, visualizar e mudar o status da denúncia ( um CRUD  ).
  
  ### Features
 - [x] Cadastro de usuário
 - [x] Validação do DB
-- [x] Cadastro das denuncias
-- [ ] Validar campos de imput
+- [x] Cadastro das denúncias
+- [ ] Validar campos de input
 - [ ] Finalizar o front-end
 - [ ] Estruturar melhor o DB
 
-## O que é necessario para rodar ?
-Na utilização de foi utilizado o XAMPP e o MySQL WorkBanch(Não e necessario, mas facilia na manipulação).
+## O que é necessário para rodar ?
+Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessário, mas facilita na manipulação).
 
 ## Como usar ?
+
