@@ -56,29 +56,29 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessári
 	
 	2-" use tbl_cadastro; "
 	
-	3-" CREATE TABLE denuncias(
-		id_pessoas smallint(6) AUTO_INCREMENT primary key,
-		nome varchar(30) NOT NULL,
-		email varchar(50) not null,
-		number varchar(200) not null,
-		senha varchar(200) not null,
-		cpf varchar(11) not null primary key ,
-		PRIMARY KEY (id),
-		primary key (cpf)
-		); "
+	3-" CREATE TABLE pessoas(
+	    id_pessoas smallint(6) AUTO_INCREMENT ,
+	    nome varchar(30) NOT NULL,
+	    email varchar(50) not null,
+	    number varchar(200) not null,
+	    senha varchar(200) not null,
+	    cpf varchar(12) not null,
+	    PRIMARY KEY (id_pessoas)
+
+	    ); "
 		
 	4-" CREATE TABLE denuncias(
-	id smallint(6) AUTO_INCREMENT primary key,
-	local varchar(30) NOT NULL,
-	tipo varchar(50) not null,
-	endereco varchar(200) not null,
-	complemento varchar(200) not null,
-	img varchar(64) not null,
-	data varchar(64) not null,
-	validacao varchar(64) not null,
-	cpf varchar(64) not null,
-	PRIMARY KEY (id)
-	); "
+		id smallint(6) AUTO_INCREMENT ,
+		local varchar(30) NOT NULL,
+		tipo varchar(50) not null,
+		endereco varchar(200) not null,
+		complemento varchar(200) not null,
+		img varchar(64) not null,
+		data varchar(64) not null,
+		validacao varchar(64) not null,
+		cpf varchar(64) not null,
+		PRIMARY KEY (id)
+		); "
 	
 ### Pronto agora teste fazer um cadastro, login e a denuncia no site.
 
