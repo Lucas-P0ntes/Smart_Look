@@ -38,7 +38,7 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessári
 3.1- Entre na pasta "xampp".<br>
 3.2- Entre na pasta htdocs.<br>
 3.3- Agora crie uma pasta e coloque os arquivos acima.<br>
-4- Agora abra seu navegador e color o caminho "http://localhost/Nome da pasta criada na opção 3.3/public/index.php" <br>
+4- Agora abra seu navegador e color o caminho "http://localhost/Nome_da_pasta_criada_na_opção_3.3/public/index.php" <br>
 ### Pronto o site já está funcionando, agora vamos configurar o banco de dados.<br>
 1- Abra o MySQL Workbanch <br>
 2- Ao lado do nome MySQL Connections tem uma bolinha com sinal de +.<br>
