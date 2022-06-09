@@ -14,7 +14,7 @@ if( isset($_POST['local']) && isset($_POST['tipo']) && isset($_POST['endereco'])
     $cpf=$_SESSION['cpf'];
     $extensao = pathinfo($file['name'], PATHINFO_EXTENSION);
     $extensao = strtolower($extensao);
-    if($extensao === "jpeg" ||  $extensao === "png" ||  $extensao === "jpg" ){
+    if($extensao === "jpeg" ||  $extensao === "png" ||  $extensao === "jpg" ||  $extensao === "jfif" ){
         $nome_file = $file['name'];
         $diretorio= "./../../views/img_denu/";
         move_uploaded_file($_FILES['file']['tmp_name'],$diretorio.$nome_file);

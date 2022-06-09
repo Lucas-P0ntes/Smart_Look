@@ -56,7 +56,7 @@ $events1 = $sql_pre1->fetchAll();
         </div>
 
         <!-- Fim do navbar -->
-    <div class="main"><h1>Bem vindo <?php echo($_SESSION['nome']) ?></h1>
+    <div class="main">
         <div class="page">
 
         
@@ -90,7 +90,7 @@ $events1 = $sql_pre1->fetchAll();
         <div class="footer">
             
             <div>
-            <a href="">Pacerias</a>
+            <a href=""></a>
             <a href=""></a>
             </div>
         

@@ -168,7 +168,25 @@ grid-area: page;
   
    
 }
+.caixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    
+    
+}
 
+.caixa h1{
+    color:  #00ccff; 
+}
+.caixa p {
+    font-size: 20px;
+    color:#00ad1d;
+}
 
 /* /////////NavBar/////////////////// */
 .navbar{
@@ -203,7 +221,7 @@ grid-area: page;
 .imglogo{
     margin-left: 50px;
     width: 110px;
-    height:100px;
+    height:90px;
     border-radius: 50%;
 }
 .search_bar{
@@ -239,7 +257,7 @@ grid-area: page;
 .footer{
     grid-area: footer;
     background-color:#00ad1d;
-    height: 65px;
+    height: 60px;
     width: 100%;
     display: flex;
     flex-direction: row;

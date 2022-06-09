@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./../css/login.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Document</title>
 </head>
     <body class="main1">
@@ -52,12 +53,12 @@
 
                     <div class="input_email">
                         <label for="email">E-mail :</label>
-                        <input class="input_campo" type="email" name="email" id="email"  min="5" max="31"  >
+                        <input class="form-control" type="email" name="email" id="email"  min="5" max="31"  >
                     </div>
 
                     <div class="input_senha">
                         <label for="senha">Senha :</label>
-                        <input type="password" class="input_campo"  name="senha" id="senha"  minlength="5" maxlength="30">
+                        <input type="password" class="form-control"  name="senha" id="senha"  minlength="5" maxlength="30">
                     </div>  
 
                     <div class="bnt">

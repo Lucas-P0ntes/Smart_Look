@@ -12,8 +12,7 @@
     justify-content: center;
 }
 .box{
-    margin-top: 50px;
-   
+    margin-top: 30px;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -21,7 +20,7 @@
     justify-content: center;
     border-radius: 10px;
     width: 400px;
-    height: 500px;
+    height: 650px;
 }
 .img img{
     width: 170px;
@@ -48,12 +47,12 @@
 
 }
 .input_campo{
-    width: 200px;
-    height: 30px;
+  
+    height: 25px;
     border-color: #00ccff;
     color:#00ad1d;
     border-radius: 5px;
-    margin: 10px;
+    margin: 5px;
     
 }
 .form label{
@@ -67,6 +66,7 @@
     background-color:rgb(51, 255, 0);
     border-radius: 5px;
     cursor:pointer;
+    margin: 5px;
 }
 
 /* /////////NavBar/////////////////// */

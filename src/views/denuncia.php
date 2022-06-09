@@ -72,13 +72,13 @@ if(!$_SESSION['nome']){
                     </div>
 
                     <div class="div_input">
-                        <label for="endereco">Endereço:</label>
+                        <label for="endereco">CEP:</label>
                         <input type="text" class="form-control"  name="endereco" id="endereco"  minlength="5" maxlength="60">
                     </div> 
 
                     <div class="div_input">
                         <label for="text">Complemento:</label>
-                        <input type="text" class="form-control"  name="complemento" id="complemento"  minlength="5" maxlength="30">
+                        <input type="text" class="form-control"  name="complemento" id="complemento"  minlength="5" maxlength="60">
                     </div>  
 
                     <div class="div_input" style='margin:10px'>
@@ -98,7 +98,10 @@ if(!$_SESSION['nome']){
                         Preste atenção nas informações preencidas nos campos.
 
                     </p>
-                 </div>
+                </div>
+                    <img style= "height: 200px; width: 300px; border-radius: 10%; "src="./../../img/lixo.jpg" alt="">
+                
+                 
           
         </div>
     </div>

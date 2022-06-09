@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./../css/cadastrar.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Document</title>
 </head>
     <body class="main">
@@ -42,30 +43,30 @@
 
             <div class="input_d">
                 <label for="email">Nome:</label>
-                <input class="input_campo" type="text" name="nome"  minlength="5" maxlength="31"  >
+                <input class="form-control" type="text" name="nome"  minlength="5" maxlength="31"  >
             </div>
 
             <div class="input_d">
                 <label for="email">E-mail :</label>
-                <input class="input_campo" type="email" name="email"   minlength="5" maxlength="31"  >
+                <input class="form-control" type="email" name="email"   minlength="5" maxlength="31"  >
             </div>
             <div class="input_d">
                 <label for="number">Telefone :</label>
-                <input type="number" class="input_campo"  name="tel"   minlength="5" maxlength="30">
+                <input type="number" class="form-control"  name="tel"   minlength="5" maxlength="30">
             </div> 
 
             <div class="input_d">
                 <label for="senha">Senha :</label>
-                <input type="password" class="input_campo"  name="senha1"   minlength="5" maxlength="30">
+                <input type="password" class="form-control"  name="senha1"   minlength="5" maxlength="30">
             </div> 
 
             <div class="input_d">
                 <label for="senha">Senha :</label>
-                <input type="password" class="input_campo"  name="senha2"   minlength="5" maxlength="30">
+                <input type="password" class="form-control"  name="senha2"   minlength="5" maxlength="30">
             </div>  
             <div class="input_d">
                 <label for="senha">CPF :</label>
-                <input type="number" class="input_campo"  name="cpf"   >
+                <input type="number" class="form-control"  name="cpf"   >
             </div> 
 
                 <div class="input_d">

@@ -41,7 +41,7 @@ grid-area: page;
     width: 50%;
     height: 500px;
     border-radius: 10px;
-    box-shadow: 1px 1px 15px  #00ad1d;
+    box-shadow: 1px 1px 15px  #000000;
    
 }
 .mid_box_left{
@@ -57,11 +57,12 @@ grid-area: page;
 .mid_box_right{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     width: 50%; height: 100%;
     border-radius: 0px 10px  10px 0px;
-    background-color: #00ad1d;
+    background-color: #a6e0f7;
+    padding: 10px;
     
     
 }
