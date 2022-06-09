@@ -28,8 +28,8 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessári
 ## Como usar ?
 ### Site 
 1-Baixe e instale o xampp e o Mysql WorkBench <br>
-/*No caso de Mac baixe o Mampp */<br>
-/*No caso de Linux o Lamp*/<br>
+/* No caso de Mac baixe o Mampp */<br>
+/* No caso de Linux o Lamp */<br>
 2 - Após executar o xampp você vai se deparar com uma tela simples.<br>
 2.1 - Cada opção dessa que você está vendo são ferramentas do xampp.<br>	
 2.2 -  No nosso caso vamos usar apenas o "Apache" e o "MySQL".<br>
