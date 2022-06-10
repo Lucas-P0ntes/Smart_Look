@@ -69,13 +69,13 @@ $db = $database->conectar();
                     <h3>
                             Canceladas
                         </h3>
-                        <button type="button" class="btn btn-danger">Danger</button>
+                        <a href="./cancelada.php" type="button" class="btn btn-danger">Canceladas</a>
                     </div>
                     <div class="min" style="color:#00ad1d">
                     <h3>
                            Solucionado
                         </h3>
-                        <button type="button" class="btn btn-success">Sucesso</button>
+                        <a href="./sucesso.php"type="button" class="btn btn-success">Sucesso</a>
                     </div>
 
                 </div>

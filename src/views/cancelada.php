@@ -7,7 +7,7 @@ require_once('./../evento/action/conexao.php');
 $database = new Database();
 $db = $database->conectar();
 $cpf=$_SESSION['cpf'];
-$sql1 = "SELECT * from denuncias where validacao='v'AND cpf='".$cpf."' ;";
+$sql1 = "SELECT * from denuncias where validacao='e'AND cpf='".$cpf."' ;";
 
 $sql_pre1 = $db->prepare($sql1);
 $sql_pre1 -> execute();
@@ -65,8 +65,7 @@ $events1 = $sql_pre1->fetchAll();
         foreach($events1 as $eventss1){
             
             echo('
-            <form action="./../evento/action/cancelardenuncia.php"  method="post" ">
-            <input type="hidden"  name="id" value="'.$events1[$i][0].'">
+           
                 <div class="min_box">
                     <div class="box_img">
                         <img  src="./img_denu/'.$events1[$i][5].' " alt="Logo">
@@ -80,10 +79,9 @@ $events1 = $sql_pre1->fetchAll();
                         <p>'.$events1[$i][6].'</p>
                          <p>'.$events1[$i][4].'</p>
                     </div>
-                    <button>Cancelar</button>
-                    <button formaction="./../evento/action/solucionado.php" >solucionado</button>
+                    
                 </div>
-                </form>'
+                '
 
             );
             $i ++;
