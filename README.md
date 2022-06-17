@@ -99,7 +99,7 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessári
 ### Mostrando o DashBoard
 ![DashBoard](https://user-images.githubusercontent.com/80328167/172514047-061bc82f-e5ca-4fd4-8d30-2d149804f66f.PNG)
 
-### Mostrando a filtragem do campo
+### Mostrando a filtragem dos campos
 ![Filtragem](https://user-images.githubusercontent.com/80328167/172514051-80b122d6-06d1-47b1-aaf0-bfc40dd1644b.PNG)
 
 
