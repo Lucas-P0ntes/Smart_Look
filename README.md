@@ -82,7 +82,7 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessári
 	
 ### Pronto agora teste fazer um cadastro, login e a denuncia no site.
 
-## Algumas Imgens do site :
+## Algumas Imgens do site:
 
 ### Home
 ![home1](https://user-images.githubusercontent.com/80328167/172514055-6bffe9b8-ca28-4d4b-b1de-e7f48cab5d9b.PNG)
