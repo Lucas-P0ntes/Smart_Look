@@ -23,38 +23,12 @@ $events1 = $sql_pre1->fetchAll();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/home.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  
-    <title>Document</title>
+    <link href="./../componentes/navbar.css" rel="stylesheet">
+    <title>Smart Look</title>
 </head>
     <body>
         <!-- Navbar -->
-            <div class="navbar">
-        <div class="box1">
-            <img class="imglogo" src="./../../img/Smartlook.png" alt="Logo">
-           
-        </div>
-        <div>
-                <a href="./dashboard.php">dashboard</a>
-                
-        </div>
-
-        <div>
-                 <div>
-                    <form action="./../evento/action/buscar.php" method="post" class="bar" >
-                        <input type="search" class="search_bar" name="buscar" placeholder="Buscar:" required>
-                        <button class="search-btn" type="submit">
-                            <span class="material-symbols-outlined" >search</span>
-                        </button>
-                    </form>
-                </div>
-        </div>
-
-            <div>
-               
-                <a href="./login/sair.php">Sair</a>
-            </div>
-        </div>
-
+        <?php include_once("./../componentes/navbar.php")?>
         <!-- Fim do navbar -->
     <div class="main">
         <div class="page">
