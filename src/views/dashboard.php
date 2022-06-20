@@ -6,6 +6,12 @@ if(!$_SESSION['nome']){
 require_once('./../evento/action/conexao.php');
 $database = new Database();
 $db = $database->conectar();
+
+$sql = "SELECT * from denuncias where  validacao='v' ;";
+
+$sql_pre = $db->prepare($sql);
+$sql_pre -> execute();
+$events = $sql_pre->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,72 +22,65 @@ $db = $database->conectar();
 
     <link href="./css/dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="./../componentes/navbar.css" rel="stylesheet">
+    <link href="./../componentes/componentes.css" rel="stylesheet">
 
     <title>Smart Look</title>
 </head>
     <body>
-        
-        <div class="main">
         <?php include_once("./../componentes/navbar.php")?>
-        <div class="page">
-            <div class="box">
-            <h1>Bem vindo: <?php echo($_SESSION['nome']) ?></h1>
-                <div class="box_a">
-                    <div class="med" style="color:#00ccff;">
-                        <h2>Fazer uma denunciar</h2>
-                        
-                        <a href="./denuncia.php" type="button" class="btn btn-info">Denunciar</a>
-                    </div>
-                    <div class="med" style="color:rgb(255, 182, 46)">
-                    <h2>
-                            Minhas denuncias
-                        </h2>
-                        <a href="./minhasdenuncias.php" type="button" class="btn btn-warning">Ver</a>
+        <div class="main" >
 
-                    </div>
-                    
-                    <div class="min"style="color:red">
-                    <h3>
-                            Canceladas
-                        </h3>
-                        <a href="./cancelada.php" type="button" class="btn btn-danger">Canceladas</a>
-                    </div>
-                    <div class="min" style="color:#00ad1d">
-                    <h3>
-                           Solucionado
-                        </h3>
-                        <a href="./sucesso.php"type="button" class="btn btn-success">Sucesso</a>
-                    </div>
-
-                </div>
-         
-                <div class="box_b">
-                    <div class="grad">
-                    <canvas id="myChart" width="20" height="6"> </canvas>
-
-                    </div>
-                    <div class="med">
-                    <h1>Ver denuncias</h1>
-                    <a href="./home.php" type="button" class="btn btn-primary">Ver denuncias</a>
-                    </div>
-                </div> 
-
-            </div>
-         
-     
-        </div>
-    </div>
- 
-   <!-- começo do footer -->
-        <div class="footer">
+            <?php include_once("./../componentes/sub_navbar.php")?>
             
-            <div>
-            <a href=""></a>
-            <a href=""></a>
+            <div class="wellcome">
+                <div class="wellcome_box">
+                    <h1>Bem vindo, a Smart Look.</h1>
+                </div>
+                <div class="wellcome_box_2">
+                    <h1>Abrir uma denuncia:</h1>
+                    <a href="./denuncia.php" type="button" class="button-blue-lg"> Denunciar</a>
+                </div>
             </div>
+            <div class="sub_page">
+                <div class="sub_page_box">
+                    <canvas id="myChart" width="20" height="6"> </canvas>
+                </div>
+                <div class="sub_page_box_2">
+                    <h2>Algumas denuncias dos sites</h1>
+                    <div class="sub_page_box_2_2">
+                    <?php 
+                            $i = 0;
+                            
+                            foreach($events as $eventss){
+                                if($i<3){
+                                echo('
+                            <div class="min_box">
+                            <div class="box_img">
+                            <img  src="./img_denu/'.$events[$i][5].' " alt="Logo">
+                            </div>
+                            
+                            <div class="for">
+                            <h1 style="color:black; ">Lixo tipo:</h1>
+                            <h1> '.$events[$i][2].' </h1>
+                            <p>'.$events[$i][1].'</p>
+                            <p>'.$events[$i][3].'</p>
+                            <p>'.$events[$i][6].'</p>
+                            <p>'.$events[$i][4].'</p>
+                            </div>
+                            </div>'
+                        );
+                        }
+                        $i ++;
+                        }
+                    ?>
+                    </div>
+                </div>
+            </div>
+
+
         
         </div>
+                    
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="./graficos.js"></script>
     </body>

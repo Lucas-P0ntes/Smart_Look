@@ -13,13 +13,14 @@ if(!$_SESSION['nome']){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/denuncia.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="./../componentes/navbar.css" rel="stylesheet">
+    <link href="./../componentes/componentes.css" rel="stylesheet">
     <title>Smart Look</title>
 </head>
     <body>
     <?php include_once("./../componentes/navbar.php")?>
         <!-- Fim do navbar -->
     <div class="main">
+    <?php include_once("./../componentes/sub_navbar.php")?>
         <div class="page">
             <div class="box_denuncia">
                 <div class="mid_box_left" style="margin:20px">

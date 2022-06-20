@@ -1,14 +1,12 @@
 *{
     margin: 0px;
     padding: 0px;
-    
 }
 body{
     height: 100vh;
     margin: 0px;
     display: grid;
-    background-color: rgba(242, 253, 255, 0.863);
-    grid-template-rows: 100px 2fr 60px;
+    grid-template-rows: 60px 2fr 60px;
     grid-template-columns: 300px 1fr;
     grid-template-areas: 
         "navbar navbar"

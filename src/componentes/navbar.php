@@ -15,15 +15,24 @@
                 </div>
             </div>
 
-            <div>
-                <p class="perfil_p">Bem vindo, <?php echo($_SESSION['nome']) ?></p>
+             
                     
-            </div>
+           
 
             <div class="perfil">     
                 <img class="imgperfil" src="./../../img/perfil.jfif" alt="Perfil">
-                <div>
-                    <a href="./login/sair.php">Sair</a>
-                </div>
+                <?php echo($_SESSION['nome']) ?>
+
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </a>
+                        <ul>
+                            <li><a href="./../views/login/sair.php">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
             </div>
         </div>

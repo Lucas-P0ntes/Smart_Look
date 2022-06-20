@@ -24,23 +24,22 @@ $events = $sql_pre->fetchAll();
     <body>
         <!-- Navbar -->
         <div class="navbar">
-        <div class="box1">
-            <img class="imglogo" src="./../img/Smartlook.png" alt="Logo">
-            <div>
-                <a href="./index.php">Home</a>
-                <a style="color:#00ccff;" href="#">Denuncias</a>
-                <a href="./Cj.php">Conheça o projeto</a>
-            </div> 
-        </div>
-            <div class="box1">
-                <div>
-                   
-                </div>
-                <div class="">
 
-                <a href="./../src/views/login/login.php">Login/Cadastrar</a>
+            <div class="box1">
+                <img class="imglogo" src="./../img/Smartlook.png" alt="Logo">
+                <div>
+                    <a href="./index.php">Home</a>
+                    <a style="color:#00ccff;" href="#">Denuncias</a>
+                    <a href="./Cj.php">Conheça o projeto</a>
                 </div> 
             </div>
+
+            <div class="box1">
+                <div class="">
+                   <a href="./../src/views/login/login.php">Login/Cadastrar</a>
+                </div> 
+            </div>
+
         </div>
 
         <!-- Fim do navbar -->

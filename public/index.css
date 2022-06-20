@@ -9,7 +9,7 @@ body{
     margin: 0px;
     display: grid;
     background-color: rgba(255, 255, 255, 0.863);
-    grid-template-rows: 120px 2fr 60px;
+    grid-template-rows: 65px 2fr 60px;
     grid-template-columns: 300px 1fr;
     grid-template-areas: 
         "navbar navbar"
@@ -33,7 +33,6 @@ grid-area: page;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-
     padding: 30px;
     box-shadow: 10px 10px 10px   rgba(242, 253, 255, 0.863);
     flex-wrap: wrap;
@@ -191,7 +190,7 @@ grid-area: page;
 /* /////////NavBar/////////////////// */
 .navbar{
     grid-area: navbar;
-    height: 100px;
+    height: 60px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -199,46 +198,67 @@ grid-area: page;
     justify-content: space-between;
     background-color: #fff;
     box-shadow: 1px 1px 5px #000000;
+    padding: 0px;
+    
+    
 }
 .box1{
+    
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 .navbar a{
     font-size: 22px;
     color:#00ad1d;
     text-decoration: none;
-    padding: 20px;
+    
     font-weight: 500;
 
   
 }
-.navbar a:hover{
-    transition-delay: 10ms;
-    color: #00ccff;
-}
+
 .imglogo{
-    margin-left: 50px;
-    width: 110px;
-    height:90px;
+    margin-left: 20px;
+    width: 150px;
+    height:50px;
+    border-radius: 1%;
+    margin-right: 10px;
+    
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+}
+
+
+.imgperfil{
+   
+    width: 45px;
+    height:45px;
     border-radius: 50%;
+    border: 1px solid #00ad1d;
+    margin:10px
+
 }
 .search_bar{
-    width: 350px;
+    width: 400px;
     height:35px;
-    border-radius: 15px;
-    border-color: #00ccff;
-    color: #00ccff;
-    font-size: 17px;
+    border-radius: 1%;
+    border-color: #00ad1d;
+    color: #0b4200;
+    font-size: 15px;
 }
 .search-btn{
     height:35px;
     width: 35px;
-    border-radius: 50%;
-    border-color: #00ccff;
+    border-radius: 1%;
+    border-color: #00ad1d;
     background-color: #fff;
-    color:#00ccff ;
+    color:#12532e; ;
     cursor: pointer;
    
 }
@@ -246,11 +266,8 @@ grid-area: page;
     display:flex ;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    margin: 5px;
-
-
 }
+
 
 
 /* ////////////////////////footer////////////////////// */
