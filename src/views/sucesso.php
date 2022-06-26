@@ -59,6 +59,12 @@ $events1 = $sql_pre1->fetchAll();
             );
             $i ++;
              }
+             if($i<=0){
+                echo('<p  style=color:black;>
+                    Você não tem denúncias resolvidas;</p>'
+                );
+            }
+            
             ?>
         </div>
     </div>

@@ -10,73 +10,72 @@
 </head>
     <body class="main">
           <!-- Navbar -->
-          <div class="navbar">
+        <div class="navbar">
         <div class="box1">
-            <img class="imglogo" src="./../../../img/Smartlook.png" alt="Logo">
-            <div>
-                <a href="./../../../public/index.php">Home</a>
-                <a  href="./../../../public/denuncias.php">Denuncias</a>
-                <a  href="./../../../public/">Conheça o projeto</a>
+        <a href="./../../../public/index.php"><h1>SMART LOOK</h1></a>
+            <div class="navigacion">
+                <a  href="./../../../public/index.php">Home</a>
+                <a href="./../../../public/denuncias.php">Denuncias</a>
+                <a  href="./../../../public/cj.php">Conheça o projeto</a>
             </div> 
         </div>
             <div class="box1">
                 <div>
-                  
+                   
                 </div>
-                <div class="">
+                <div class="a_do_login">
 
-                <a style="color:#00ccff;" href="./login.php">Login/Cadastrar</a>
+                <a style="color:#00ccff;" href="#">Login/Cadastrar</a>
                 </div> 
             </div>
         </div>
-        </div>
-
         <!-- Fim do navbar -->
-
         <div>
         <div class="box">
+
             <div class="img">
-            <img src="./../../../img/smartlook.png" alt="">
-            </div>
-            <form action="./../../evento/action/cadastro.php" method="post" class="form">
-
-            <div class="input_d">
-                <label for="email">Nome:</label>
-                <input class="form-control" type="text" name="nome"  minlength="5" maxlength="31"  >
+                <img src="./../../../img/img_profile_cadastro.png" alt="">
             </div>
 
-            <div class="input_d">
-                <label for="email">E-mail :</label>
-                <input class="form-control" type="email" name="email"   minlength="5" maxlength="31"  >
-            </div>
-            <div class="input_d">
-                <label for="number">Telefone :</label>
-                <input type="number" class="form-control"  name="tel"   minlength="5" maxlength="30">
-            </div> 
+                <form action="./../../evento/action/cadastro.php" method="post" class="form">
 
-            <div class="input_d">
-                <label for="senha">Senha :</label>
-                <input type="password" class="form-control"  name="senha1"   minlength="5" maxlength="30">
-            </div> 
-
-            <div class="input_d">
-                <label for="senha">Senha :</label>
-                <input type="password" class="form-control"  name="senha2"   minlength="5" maxlength="30">
-            </div>  
-            <div class="input_d">
-                <label for="senha">CPF :</label>
-                <input type="number" class="form-control"  name="cpf"   >
-            </div> 
-
-                <div class="input_d">
-                    <button class="bnt">Cadastrar</button> 
+                <div class="campos_input">
+                    <label for="nome">Nome:</label>
+                        <input class="input" type="text" name="nome" placeholder="Primeiro nome:"  minlength="5" maxlength="31"  >
                 </div>
-               
-        </form>  
-        <a href="login.php">Fazer Login</a>
-       
-        </div>
-   </div>
 
+                <div class=campos_input>
+                    <label for="email">E-mail:</label>
+                    <input class="input" type="email" name="email" placeholder="E-mail completo:"  minlength="5" maxlength="31"  >
+                </div>
+                <div class=campos_input>
+                    <label for="number">Telefone:</label>
+                    <input type="number" class="input"  name="tel" placeholder="Telefone pessoal:"  minlength="5" maxlength="30">
+                </div> 
+
+                <div class=campos_input>
+                    <label for="senha">Crie a senha:</label>
+                    <input type="password" class="input"  name="senha1" placeholder="Senha:"   minlength="5" maxlength="30">
+                </div> 
+
+                <div class=campos_input>
+                    <label for="senha">Confirmer a senha:</label>
+                    <input type="password" class="input"  name="senha2"  placeholder="Repita a senha:"  minlength="5" maxlength="30">
+                </div>  
+                <div class=campos_input>
+                    <label for="senha">CPF:</label>
+                    <input type="number" class="input" placeholder="Coloque os 11 digitos:" name="cpf"   >
+                </div> 
+
+                    <div class="">
+                        <button class="bnt">Cadastrar</button> 
+                    </div>
+                
+            </form>  
+
+            <a style="margin:5px" href="login.php">Fazer Login</a>
+
+            </div>
+        </div>
     </body>
 </html>

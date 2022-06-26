@@ -1,7 +1,7 @@
 <div class="navbar">
 
             <div class="box1">
-                <img class="imglogo" src="./../../img/Smartlook.png" alt="Logo">
+                <a href="./dashboard.php"><h1>SMART LOOK</h1></a>
                 <div>
                     <div>
                         <form action="./../evento/action/buscar.php" method="post" class="bar" >

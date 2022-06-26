@@ -11,29 +11,27 @@
     <title>Document</title>
 </head>
     <body>
-        <!-- Navbar -->
-            <div class="navbar">
+    <div class="navbar">
         <div class="box1">
-            <img class="imglogo" src="./../img/Smartlook.png" alt="Logo">
-            <div>
-                <a   href="./index.php">Home</a>
+        <a href="./index.php"><h1>SMART LOOK</h1></a>
+            <div class="navigacion">
+                <a  href="./index.php">Home</a>
                 <a href="./denuncias.php">Denuncias</a>
-                <a style="color:#00ccff;" href="#">Conheça o projeto</a>
+                <a  style="color:#00ccff;"href="#">Conheça o projeto</a>
             </div> 
         </div>
             <div class="box1">
                 <div>
                    
                 </div>
-                <div class="">
+                <div class="a_do_login">
 
                 <a href="./../src/views/login/login.php">Login/Cadastrar</a>
                 </div> 
             </div>
         </div>
-
         <!-- Fim do navbar -->
-    <<div class="main">
+    <div class="main">
     <div class="page">
         <div class="caixa">
             <h1 > Bem-Vindo ao projeto Smart-Look </h1>
@@ -58,11 +56,8 @@
    <!-- começo do footer -->
         <div class="footer">
             
-            <div>
-            <a href="">Pacerias</a>
-            <a href=""></a>
-            </div>
         
         </div>
+        
     </body>
 </html>

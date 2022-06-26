@@ -24,25 +24,24 @@ $events = $sql_pre->fetchAll();
     <body>
         <!-- Navbar -->
         <div class="navbar">
-
-            <div class="box1">
-                <img class="imglogo" src="./../img/Smartlook.png" alt="Logo">
-                <div>
-                    <a href="./index.php">Home</a>
-                    <a style="color:#00ccff;" href="#">Denuncias</a>
-                    <a href="./Cj.php">Conheça o projeto</a>
-                </div> 
-            </div>
-
-            <div class="box1">
-                <div class="">
-                   <a href="./../src/views/login/login.php">Login/Cadastrar</a>
-                </div> 
-            </div>
-
+        <div class="box1">
+        <a href="./index.php"><h1>SMART LOOK</h1></a>
+            <div class="navigacion">
+                <a   href="./index.php">Home</a>
+                <a style="color:#00ccff;" href="#">Denuncias</a>
+                <a href="./Cj.php">Conheça o projeto</a>
+            </div> 
         </div>
+            <div class="box1">
+                <div>
+                   
+                </div>
+                <div class="a_do_login">
 
-        <!-- Fim do navbar -->
+                <a href="./../src/views/login/login.php">Login/Cadastrar</a>
+                </div> 
+            </div>
+        </div>        <!-- Fim do navbar -->
     <div class="main">
         <div class="page">
         <?php 
@@ -76,8 +75,7 @@ $events = $sql_pre->fetchAll();
         <div class="footer">
             
             <div>
-            <a href="">Pacerias</a>
-            <a href=""></a>
+            
             </div>
         
         </div>

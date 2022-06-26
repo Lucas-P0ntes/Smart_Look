@@ -31,18 +31,19 @@ $events1 = $sql_pre1->fetchAll();
     <div class="main">
         <?php include_once("./../componentes/sub_navbar.php")?>
         <div class="page">
-        <?php 
+
+        <?php
         $i = 0;
+        
         foreach($events1 as $eventss1){
-            
             echo('
            
-                <div class="min_box">
-                    <div class="box_img">
+                <div class="min_box"style="background-color:red";>
+                <div class="box_img">
                         <img  src="./img_denu/'.$events1[$i][5].' " alt="Logo">
-                    </div>
-
-                    <div class="for">
+                        </div>
+                        
+                        <div class="for">
                         <h1 style="color:black; ">Lixo tipo:</h1>
                         <h1> '.$events1[$i][2].' </h1>
                         <p>'.$events1[$i][1].'</p>
@@ -56,12 +57,17 @@ $events1 = $sql_pre1->fetchAll();
 
             );
             $i ++;
-             }
-            ?>
+        }
+        if($i<=0){
+            echo('<p  style=color:black;>
+                Você não tem denúncias canceladas;</p>'
+            );
+        }
+        ?>
         </div>
     </div>
- 
-   <!-- começo do footer -->
+    
+    <!-- começo do footer -->
         <div class="footer">
             
             <div>

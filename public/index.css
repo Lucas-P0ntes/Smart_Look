@@ -11,6 +11,7 @@ body{
     background-color: rgba(255, 255, 255, 0.863);
     grid-template-rows: 65px 2fr 60px;
     grid-template-columns: 300px 1fr;
+    min-height: 100%;
     grid-template-areas: 
         "navbar navbar"
         "page page"
@@ -67,7 +68,7 @@ grid-area: page;
     border-radius: 10px;
 }
 .min_box h1{
-    color: #00ad1d;
+    color: #093028;
     font-size: 20px;
 }
 .boxhometext{
@@ -75,8 +76,8 @@ grid-area: page;
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    width: 500px;
-    color:#00ad1d;
+    width: 40%;
+    color:#093028;
     height: 500px;
     align-items: center;
     justify-content: center;
@@ -84,11 +85,11 @@ grid-area: page;
     
 }
 .boxhometext h1{
-    color:#00ad1d;
+    color:#093028;
     font-size: 60px;
 }
 .boxhometext p{
-    color:#00ccff;
+    color:#00aeff;
     font-size: 30px;
 }
 .bnt_denuciar{
@@ -98,21 +99,23 @@ grid-area: page;
     margin: 20px;
     width: 200px;
     height: 50px;
-    background-color: #00ad1d; 
+    background-color: #093028; 
     border-radius: 10px;
     color: #fff;
     font-size: 25px;
     cursor: pointer;
     text-decoration: none;
 }
-.teste img{ 
-    display: flex;
-    width: 800px;
-    height: 600px;
-    border-radius: 20px;
-  
-   
+.box_img_home{ 
+    width: 51%;
+    height: 40%;
 }
+.box_img_home img{ 
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 /* page 2 */
 .page2{
     background-color: rgba(255, 255, 255, 0.863);
@@ -129,7 +132,7 @@ grid-area: page;
     padding: 30px;
     border-radius: 10px;
     width: 500px;
-    color:#00ad1d;
+    color:#093028;
     height: 500px;
     align-items: center;
     justify-content: center;
@@ -137,12 +140,12 @@ grid-area: page;
     
 }
 .boxhometext2 h1{
-    color:#00ccff;
+    color:#00aeff;
     font-size: 60px;
 }
 .boxhometext2 p{
     
-    color:#00ad1d;
+    color:#093028;
     font-size: 30px;
 }
 .bnt_denuciar2{
@@ -152,12 +155,12 @@ grid-area: page;
     margin: 20px;
     width: 200px;
     height: 50px;
-    background-color:  #00ccff; 
+    background-color:  #00aeff; 
     border-radius: 10px;
     color: #fff;
     font-size: 25px;
     cursor: pointer;
-    border: #00ccff;
+    border: #00aeff;
 }
 .teste2 img{ 
     display: flex;
@@ -180,11 +183,11 @@ grid-area: page;
 }
 
 .caixa h1{
-    color:  #00ccff; 
+    color:  #00aeff; 
 }
 .caixa p {
     font-size: 20px;
-    color:#00ad1d;
+    color:#093028;
 }
 
 /* /////////NavBar/////////////////// */
@@ -197,7 +200,7 @@ grid-area: page;
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    box-shadow: 1px 1px 5px #000000;
+    box-shadow: 1px 1px 5px #b1b1b1;
     padding: 0px;
     
     
@@ -207,79 +210,64 @@ grid-area: page;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 50%;
 }
 .navbar a{
     font-size: 22px;
-    color:#00ad1d;
+    /* color: #22ce00; */
     text-decoration: none;
-    
+    color: #093028;
     font-weight: 500;
 
   
 }
-
-.imglogo{
-    margin-left: 20px;
-    width: 150px;
-    height:50px;
-    border-radius: 1%;
-    margin-right: 10px;
+.navbar a:hover{
+    font-size: 22px;
+    /* color: #22ce00; */
+    text-decoration: none;
+    color: #00ccff;
+    font-weight: 500;
+    
     
 }
-.perfil{
+
+.navbar h1{
+    
+    width: 120px;
+    height:65px;
+    border-radius: 1%;
+    margin: 20px;
+    font-size: 27px;
+    color: #00aeff;
+}
+.navigacion{
+    width: 100%;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin: 10px;
-}
-
-
-.imgperfil{
-   
-    width: 45px;
-    height:45px;
-    border-radius: 50%;
-    border: 1px solid #00ad1d;
-    margin:10px
-
-}
-.search_bar{
-    width: 400px;
-    height:35px;
-    border-radius: 1%;
-    border-color: #00ad1d;
-    color: #0b4200;
-    font-size: 15px;
-}
-.search-btn{
-    height:35px;
-    width: 35px;
-    border-radius: 1%;
-    border-color: #00ad1d;
-    background-color: #fff;
-    color:#12532e; ;
-    cursor: pointer;
-   
 }
 .bar{
     display:flex ;
     align-items: center;
     justify-content: center;
 }
-
+.a_do_login{
+    
+    margin: 10px;
+}
 
 
 /* ////////////////////////footer////////////////////// */
 .footer{
     grid-area: footer;
-    background-color:#00ad1d;
-    height: 60px;
+    background-color:#093028;
+    height: 40px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: auto;
 
 }
 

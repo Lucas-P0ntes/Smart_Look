@@ -21,6 +21,7 @@ body{
 grid-area: page;
 flex-direction: column;
 
+
 }
 
 
@@ -28,31 +29,55 @@ flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(205, 255, 205);
+    flex-direction: column;
     width: 100%;
-    height: 300px;
+    height: 400px;
+    background-image:  linear-gradient(rgba(255, 0, 0, 0) , rgb(0, 0, 0) ), url("./../../../img/Sea.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    
+    /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+    background-size: 100% 100%;
+    
 
 }
 .wellcome_box{
     display: flex;
-    align-items:flex-end;
+    align-items:flex-start;
     justify-content:flex-start;
-    width:50%;
-    height: 100%;
-    font-size: 25px;
-    color: #0b4200;
-}
-.wellcome_box_2{
-    display: flex;
-    align-items:center;
-    justify-content:space-evenly;
     flex-direction: column;
-    width:40%;
-    height: 90%;
-    background-color: #ffff;
-    font-size: 20px;
-    color: #0b4200;
+    font-size: 30px;
+    color:#093028;
+
+  
+} 
+.wellcome_box h3{
+    color: #ffffff;
+} 
+
+.wellcome_box h1{
+    color: #ffffff;
 }
+.wellcome_box p{
+    
+    font-size: 17px;
+    color: #ffffff;
+}
+.button_branco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: #00aeff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5%;
+    color: #fff;
+    margin: 10px;
+}
+/* -------------------- */
 
 /* Page 1  */
 .sub_page{
@@ -72,7 +97,7 @@ flex-direction: column;
     justify-content: flex-start;
     flex-direction: column;
     width: 70%;
-    background-color: #494949;
+    background-color: #093028;
 }
 .sub_page_box_2{
     display: flex;
@@ -81,6 +106,12 @@ flex-direction: column;
     flex-direction: column;  
     width: 30%;
   
+}
+.sub_page_box_2 h2{
+    color: #0076ad;
+    margin: 10px; 
+    font-size: 25px;
+
 }
 .sub_page_box_2_2{
     display: flex;

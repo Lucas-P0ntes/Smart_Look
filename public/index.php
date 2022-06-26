@@ -14,8 +14,8 @@
         <!-- Navbar -->
             <div class="navbar">
         <div class="box1">
-            <img class="imglogo" src="./../img/Smartlook.png" alt="Logo">
-            <div>
+        <a href="./index.php"><h1>SMART LOOK</h1></a>
+            <div class="navigacion">
                 <a  style="color:#00ccff;" href="#">Home</a>
                 <a href="./denuncias.php">Denuncias</a>
                 <a href="./Cj.php">Conheça o projeto</a>
@@ -25,7 +25,7 @@
                 <div>
                    
                 </div>
-                <div class="">
+                <div class="a_do_login">
 
                 <a href="./../src/views/login/login.php">Login/Cadastrar</a>
                 </div> 
@@ -45,13 +45,13 @@
                 <a href="./../src/views/login/login.php" class="bnt_denuciar">Denunciar</a>
             </div>
 
-            <div class="teste">
+            <div class="box_img_home">
                 <img src="./../img/cuidar.jpg" alt="">
             </div>
         </div>
             <!-- page 2 -->
         <div class="page2">
-            <div class="teste2">
+            <div class="box_img_home">
                 <img src="./../img/lampada.jpg" alt="">
             </div>
             <div class="boxhometext2">
@@ -70,8 +70,7 @@
         <div class="footer">
             
             <div>
-            <a href="">Pacerias</a>
-            <a href=""></a>
+          
             </div>
         
         </div>

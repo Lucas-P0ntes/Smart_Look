@@ -21,7 +21,7 @@
 }
 .navbar a{
     font-size: 22px;
-    color:#00ad1d;
+    color: #22ce00;
     text-decoration: none;
     
     font-weight: 500;
@@ -29,13 +29,14 @@
   
 }
 
-.imglogo{
-    margin-left: 20px;
-    width: 150px;
-    height:50px;
-    border-radius: 1%;
-    margin-right: 10px;
+.navbar h1{
     
+    width: 120px;
+    height:65px;
+    border-radius: 1%;
+    margin: 20px;
+    font-size: 27px;
+    color: #00aeff;
 }
 .perfil{
     display: flex;
@@ -51,7 +52,7 @@
     width: 45px;
     height:45px;
     border-radius: 50%;
-    border: 1px solid #00ad1d;
+    border: 2px solid    #00aeff; ;
     margin:10px
 
 }
@@ -59,19 +60,19 @@
     width: 400px;
     height:35px;
     border-radius: 1%;
-    border-color: #00ad1d;
-    color: #0b4200;
+    border: 2px solid    #00aeff;
+    color: #00ccff;
     font-size: 15px;
+    
 }
 .search-btn{
     height:35px;
     width: 35px;
     border-radius: 1%;
-    border-color: #00ad1d;
+    border: 2px solid    #00aeff;
     background-color: #fff;
-    color:#12532e; ;
+    color: #00aeff;
     cursor: pointer;
-   
 }
 .bar{
     display:flex ;
@@ -88,15 +89,12 @@
 .menu li{
     position:relative;
     float:left;font-size: 15px;
-    
     }
 .menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;font-size: 15px}
-
 .menu li a:hover{
-background:rgb(8, 134, 18);
+background:#00ccff;
 color:#fff;
 font-size: 15px
-
 }
 .menu li  ul{
     position:absolute;
@@ -118,18 +116,23 @@ width:50px;font-size: 15px
     align-items:center;
     justify-content:space-evenly;
     height: 50px;
+    background: #093028;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
     
 }
 .sub_navbar a{
     text-decoration: none;
-    font-size: 16px;
-    color: #0b4200;
+    font-size: 17px;
+    color: #ffffff;
     
 }
 .h:hover {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 17px;
+    
     color: #22ce00;
     
 }
