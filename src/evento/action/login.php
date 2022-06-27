@@ -18,7 +18,7 @@ if(isset($_POST['email']) && isset($_POST['senha']) ){
         $_SESSION['nome'] = $list_login[0][1];
         $_SESSION['cpf'] = $list_login[0][5];
        
-        header('Location: ./../../views/dashboard.php');
+        header('Location: ./../../views/my_dashboard.php');
         
     }else{
         

@@ -1,7 +1,7 @@
 <div class="navbar">
 
             <div class="box1">
-                <a href="./dashboard.php"><h1>SMART LOOK</h1></a>
+                <a href="./my_dashboard.php"><h1>SMART LOOK</h1></a>
                 <div>
                     <div>
                         <form action="./../evento/action/buscar.php" method="post" class="bar" >

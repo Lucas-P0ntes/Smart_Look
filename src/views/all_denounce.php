@@ -4,6 +4,8 @@ if(!$_SESSION['nome']){
     header("location: ./login/sair.php");
 }
 require_once('./../evento/action/conexao.php');
+require_once('./../componentes/funcoes.php');
+
 $database = new Database();
 $db = $database->conectar();
 
@@ -43,42 +45,9 @@ else{
     <div class="main">
     <?php include_once("./../componentes/sub_navbar.php")?>
         <div class="page">
-
-        
-        <?php 
-        $i = 0;
-        foreach($events as $eventss){
-            
-            echo('
-                <div class="min_box">
-                    <div class="box_img">
-                        <img  src="./img_denu/'.$events[$i][5].' " alt="Logo">
-                    </div>
-
-                    <div class="for">
-                        <h1 style="color:black; ">Lixo tipo:</h1>
-                        <h1> '.$events[$i][2].' </h1>
-                        <p>'.$events[$i][1].'</p>
-                        <p>'.$events[$i][3].'</p>
-                        <p>'.$events[$i][6].'</p>
-                         <p>'.$events[$i][4].'</p>
-                    </div>
-                </div>'
-            );
-            $i ++;
-             }
-            ?>
+            <?php renderizar_box_denuncias($events)?>
         </div>
     </div>
  
-   <!-- começo do footer -->
-        <div class="footer">
-            
-            <div>
-            <a href=""></a>
-            <a href=""></a>
-            </div>
-        
-        </div>
     </body>
 </html>

@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 60px 2fr 60px;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+        "navbar navbar"
+        "page page"
+        "footer footer"
+    ;
+}
+
+
+.main{
+
+grid-area: page;
+
+
+}
+
+body{
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.863);
+    grid-template-rows: 60px 2fr 60px;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+        "navbar navbar"
+        "page page"
+        "footer footer"
+    ;
+}
+
+.main{
+grid-area: page;
+}
+/* Page 1  */
+.page{
+    background-color: rgba(255, 255, 255, 0.863);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+    box-shadow: 10px 10px 10px   rgba(242, 253, 255, 0.863);
+    flex-wrap: wrap;
+}
+.min_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 220px;
+    height: 380px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 10px   rgba(0, 0, 0, 0.863);
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.min_box:hover{
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    box-shadow: 1px 1px 10px  #00701c;
+      
+}
+.min_box img {
+    width: 200px;
+    height: 160px;
+    border-radius: 10px;
+    border: 2px solid #00701c;
+}
+.min_box h1{
+    color: #00ad1d;
+    font-size: 20px;
+}
+.container_elements{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction:row;
+    width: 100%;
+}
+.container_elements label{
+    color: #00701c;
+    font-size: 17px;
+}
+.container_elements p{
+    color: #00aad4;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.box_bnt{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.bnt_red{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    width: 55px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #00701c;
+    cursor: pointer;
+}
+.bnt_green{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00701c;
+    color: white;
+    width: 55px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #00701c;;
+    cursor: pointer;
+}

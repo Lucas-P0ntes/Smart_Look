@@ -27,4 +27,4 @@ if( isset($_POST['local']) && isset($_POST['tipo']) && isset($_POST['endereco'])
    
 }
 
- header('Location: ./../../views/home.php');
+ header('Location: ./../../views/all_denounce.php');

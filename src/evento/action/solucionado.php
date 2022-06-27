@@ -11,4 +11,4 @@ if(isset($_POST["id"])){
     $query_up = $db->prepare( $sql_up );
     $query_up->execute();
 }
-header('Location: ./../../views/minhasdenuncias.php');
+header('Location: ./../../views/my_denounce.php');

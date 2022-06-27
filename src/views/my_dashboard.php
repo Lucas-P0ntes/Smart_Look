@@ -20,7 +20,7 @@ $events = $sql_pre->fetchAll();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="./css/dashboard.css" rel="stylesheet">
+    <link href="./css/my_dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="./../componentes/componentes.css" rel="stylesheet">
 
@@ -37,7 +37,7 @@ $events = $sql_pre->fetchAll();
                     <h3>Help to  Futuro</h3>   
                     <h1 style="color:#00aeff;">Help with  Smart Look</h1>          
                     <p>Para ajudar o projeto faça uma denúncia em nosso site e simples e fácil de fazer:</p>
-                    <a href="./denuncia.php" type="button"  class="button_branco"> Denunciar</a>
+                    <a href="./make_denounce.php" type="button"  class="button_branco"> Denunciar</a>
                 </div> 
             </div>
             <div class="sub_page">
@@ -73,10 +73,10 @@ $events = $sql_pre->fetchAll();
                         }
                     ?>
                     </div>
+
                 </div>
+
             </div>
-
-
         
         </div>
                     

@@ -11,5 +11,5 @@ if(isset($_POST["buscar"])){
     $buscar=$_POST['buscar'];
     $_SESSION["buscar"] = $buscar;
 
-    header("location: ./../../views/home.php");
+    header("location: ./../../views/all_denounce.php");
 }

@@ -80,17 +80,8 @@ if(!$_SESSION['nome']){
                 
                  
           
-        </div>
-    </div>
- 
-   <!-- começo do footer
-        <div class="footer">
-            
-            <div>
-            <a href="">Pacerias</a>
-            <a href=""></a>
             </div>
-        
         </div>
+
     </body>
-</html> -->
+</html> 
