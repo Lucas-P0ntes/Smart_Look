@@ -24,13 +24,13 @@ grid-area: page;
 }
 /* Page 1  */
 .page{
-    background-color: rgba(242, 253, 255, 0.863);
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: row;
     padding: 30px;
-    box-shadow: 10px 10px 10px   rgba(242, 253, 255, 0.863);;
+    background-color: #093028;
+   
 }
 .box_denuncia{
     display: flex;
@@ -40,14 +40,17 @@ grid-area: page;
     height: 500px;
     border-radius: 10px;
     box-shadow: 1px 1px 15px  #000000;
+    background-color: #fff;
    
 }
 .mid_box_left{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%; height: 100%;
-    background-color: #fff;
+    width: 50%; 
+    height: 100%;
+    margin:20px;
+    
     
    
   
@@ -59,38 +62,53 @@ grid-area: page;
     flex-direction: column;
     width: 50%; height: 100%;
     border-radius: 0px 10px  10px 0px;
-    background-color: #a6e0f7;
+    box-shadow: 1px 1px 10px #000000;
+    background-color: #093028;
     padding: 10px;
+    color: #fff;
     
     
 }
 /* /////////box1/////////// */
-.input_campo{
-    width: 250px;
-    height: 30px;
-    background-color:rgb(255, 255, 255);
-    border-radius: 5px;
-    margin: 10px;
-    
-}
 .div_input{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+}.op{
+    width: 215px;
+    height: 32px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 3px;
+    margin: 5px;
+    border: 1px solid #00ccff;
+    color:#093028;
+    padding: .300rem .400rem;
+}
+.input{
+    width: 200px;
+    height: 20px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 3px;
+    margin: 5px;
+    border: 1px solid #00ccff;
+    color:#093028;
+    padding: .300rem .400rem;
 }
 label{
     color:#00ccff;
     font-size: 20px;
 }
 
-.from_button{
+.bnt{
     background-color: #00ccff;
     color:#ffffff;
-    width: 300px;
+    width: 200px;
     height: 30px;
     cursor: pointer;
     font-size: 15px;
+    border: none;
+    box-shadow:1px 1px 10px #093028;
 }
 .from_button:hover{
     background-color: #00ad1d;

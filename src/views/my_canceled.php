@@ -33,9 +33,11 @@ $events1 = $sql_pre1->fetchAll();
     <div class="main">
         
          <?php include_once("./../componentes/sub_navbar.php")?>
-        
-            <div class="page">
-                <?php renderizar_box_denuncias($events1);?>
+         <div class="page">
+                <h1>Denuncias Canceladas</h1>
+                <div class="container_min_box">
+                    <?php renderizar_box_denuncias($events1)?>
+                </div>
             </div>
 
     </div>

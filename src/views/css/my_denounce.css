@@ -42,6 +42,17 @@ grid-area: page;
 }
 /* Page 1  */
 .page{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; 
+}
+.page h1{
+    color: #00aad4;
+    margin-top: 10px;
+
+}
+.container_min_box{
     background-color: rgba(255, 255, 255, 0.863);
     display: flex;
     justify-content: space-evenly;
@@ -50,6 +61,7 @@ grid-area: page;
     padding: 30px;
     box-shadow: 10px 10px 10px   rgba(242, 253, 255, 0.863);
     flex-wrap: wrap;
+    width: 90%;
 }
 .min_box{
     display: flex;

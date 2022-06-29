@@ -22,7 +22,7 @@ $events1 = $sql_pre1->fetchAll();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/home.css" rel="stylesheet">
+    <link href="./css/my_solved.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="./../componentes/componentes.css" rel="stylesheet">
     <title>Smart Look</title>
@@ -35,7 +35,10 @@ $events1 = $sql_pre1->fetchAll();
             <?php include_once("./../componentes/sub_navbar.php")?>
 
             <div class="page">
-                <?php renderizar_box_denuncias($events1); ?>
+                <h1>Denuncias Solucionadas</h1>
+                <div class="container_min_box">
+                    <?php renderizar_box_denuncias($events1)?>
+                </div>
             </div>
 
         </div>

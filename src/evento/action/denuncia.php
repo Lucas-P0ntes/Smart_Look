@@ -4,8 +4,8 @@ require_once('conexao.php');
 $database = new Database();
 $db = $database->conectar();
 
-if( isset($_POST['local']) && isset($_POST['tipo']) && isset($_POST['endereco']) && isset($_POST['complemento']) && isset($_FILES['file'])){  
-    $local=$_POST['local'];
+if( isset($_POST['cidade']) && isset($_POST['tipo']) && isset($_POST['endereco']) && isset($_POST['complemento']) && isset($_FILES['file'])){  
+    $local=$_POST['cidade'];
     $tipo=$_POST['tipo'];
     $endereco=$_POST['endereco'];
     $complemento=$_POST['complemento'];

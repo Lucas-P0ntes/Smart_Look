@@ -35,6 +35,8 @@ $events1 = $sql_pre1->fetchAll();
             <?php include_once("./../componentes/sub_navbar.php")?>
 
             <div class="page">
+                <h1>Minhas denúncias </h1>
+                <div class="container_min_box">
         
             <?php 
                 $i = 0;
@@ -97,6 +99,7 @@ $events1 = $sql_pre1->fetchAll();
                         }
                         
                 ?>
+                </div>
                 </div>
             </div>
  

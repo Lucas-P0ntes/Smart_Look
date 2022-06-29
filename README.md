@@ -18,9 +18,12 @@ O sistema de denúncia é bem simples.
 - [x] Cadastro de usuário
 - [x] Validação do DB
 - [x] Cadastro das denúncias
-- [ ] Validar campos de input
-- [ ] Finalizar o front-end
+- [x] Finalizar o front-end 
+- [x] Validar campos de input
 - [ ] Estruturar melhor o DB
+- [ ] Fazer um sistema de bucar matemático
+- [ ] Fazer um sistema para o usuario alterar seus dados
+- [ ] Fazer um sistema de like e dislike  
 
 ## O que é necessário para rodar ?
 Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessário, mas facilita na manipulação).

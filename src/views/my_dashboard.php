@@ -71,6 +71,11 @@ $events = $sql_pre->fetchAll();
                         }
                         $i ++;
                         }
+                        if($i<=0){
+                            echo('<p  style=color:black;>
+                                Ainda não há  denúncias ainda;</p>'
+                            );
+                        }
                     ?>
                     </div>
 
