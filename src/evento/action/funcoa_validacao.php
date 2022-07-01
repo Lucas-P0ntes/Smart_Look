@@ -3,11 +3,13 @@
 
 
 function valida_nome($nome){
-    if($nome="" && $nome=0  ){
+    if($nome="" || $nome=0  ){
         return false;
+       
     }
     else{
         return true;
+        
     }
 }
 ///////////////////////////////////////

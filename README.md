@@ -40,7 +40,7 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessári
 3- Agora vá nos seus aquivos e entre no seu HD(Windows(C:)).<br>
 3.1- Entre na pasta "xampp".<br>
 3.2- Entre na pasta htdocs.<br>
-3.3- Agora crie uma pasta e coloque os arquivos acima.<br>
+3.3- Agora dentro da pasta htdocs crie uma pasta e coloque os arquivos baixados desse github(Tem uma opção de baixar o zip no botão:"code".).<br>
 4- Agora abra seu navegador e color o caminho "http://localhost/Nome_da_pasta_criada_na_opção_3.3/public/index.php" <br>
 ### Pronto o site já está funcionando, agora vamos configurar o banco de dados.<br>
 1- Abra o MySQL Workbanch <br>

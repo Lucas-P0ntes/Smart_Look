@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,16 +44,17 @@
                     <label for="nome">Nome:</label>
                         <input class="input" type="text" name="nome" placeholder="Primeiro nome:"  minlength="5" maxlength="31"  >
                 </div>
-
+                <?php if((isset($_SESSION['erro_nome']))){echo('<p class="erro"> "'.$_SESSION['erro_nome'].'"</p>');unset($_SESSION['erro_nome']);}?>
                 <div class=campos_input>
                     <label for="email">E-mail:</label>
                     <input class="input" type="email" name="email" placeholder="E-mail completo:"  minlength="5" maxlength="31"  >
                 </div>
+                <?php if((isset($_SESSION['erro_email']))){echo('<p class="erro"> "'.$_SESSION['erro_email'].'"</p>');unset($_SESSION['erro_email']);}?>
                 <div class=campos_input>
                     <label for="number">Telefone:</label>
                     <input type="number" class="input"  name="tel" placeholder="Telefone pessoal:"  minlength="5" maxlength="30">
                 </div> 
-
+                <?php if((isset($_SESSION['erro_tel']))){echo('<p class="erro"> "'.$_SESSION['erro_tel'].'"</p>');unset($_SESSION['erro_tel']);}?>
                 <div class=campos_input>
                     <label for="senha">Crie a senha:</label>
                     <input type="password" class="input"  name="senha1" placeholder="Senha:"   minlength="5" maxlength="30">
@@ -62,10 +64,12 @@
                     <label for="senha">Confirmer a senha:</label>
                     <input type="password" class="input"  name="senha2"  placeholder="Repita a senha:"  minlength="5" maxlength="30">
                 </div>  
+                <?php if((isset($_SESSION['erro_pass']))){echo('<p class="erro"> "'.$_SESSION['erro_pass'].'"</p>');unset($_SESSION['erro_pass']);}?>
                 <div class=campos_input>
                     <label for="senha">CPF:</label>
                     <input type="number" class="input" placeholder="Coloque os 11 digitos:" name="cpf"   >
                 </div> 
+                <?php if((isset($_SESSION['erro_cpf']))){echo('<p class="erro"> "'.$_SESSION['erro_cpf'].'"</p>'); unset($_SESSION['erro_cpf']);}?>
 
                     <div class="">
                         <button class="bnt">Cadastrar</button> 

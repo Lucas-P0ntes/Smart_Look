@@ -19,7 +19,7 @@ $sql_pre = $db->prepare($sql);
 $sql_pre -> execute();
 $events = $sql_pre->fetchAll();}
 else{
-    $sql = "SELECT * from denuncias where local ='".$buscar."'  And validacao='v' ;";
+    $sql = "SELECT * from denuncias where    validacao='v' And local like '%".$buscar."%' ;";
 
     $sql_pre = $db->prepare($sql);
     $sql_pre -> execute();
