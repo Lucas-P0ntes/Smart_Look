@@ -1,13 +1,13 @@
 <?php
 session_start();
-if(!$_SESSION['nome']){
+if(!$_SESSION['cpf']){
     header("location: ./login/sair.php");
 }
 require_once('./../evento/action/conexao.php');
 $database = new Database();
 $db = $database->conectar();
 $cpf=$_SESSION['cpf'];
-$sql1 = "SELECT * from denuncias where validacao='v'AND cpf='".$cpf."' ;";
+$sql1 = "SELECT * from tbl_denuncias where validacao='v'AND cpf='".$cpf."' ;";
 
 $sql_pre1 = $db->prepare($sql1);
 $sql_pre1 -> execute();
@@ -83,7 +83,7 @@ $events1 = $sql_pre1->fetchAll();
                                 </div>
                                 <div class="box_bnt">
                                     <button class="bnt_red">Cancelar</button>
-                                    <button class="bnt_green" formaction="./../evento/action/solucionado.php" >solucionado</button>
+                                    <button class="bnt_green" formaction="./../evento/action/solucionado.php" >Resolvido</button>
                                 </div>
                             </div>
                         </form>'

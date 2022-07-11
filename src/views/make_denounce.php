@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!$_SESSION['nome']){
+if(!$_SESSION['cpf']){
     header("location: ./login/sair.php");
 }
 

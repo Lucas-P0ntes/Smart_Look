@@ -70,6 +70,7 @@
                     <input type="number" class="input" placeholder="Coloque os 11 digitos:" name="cpf"   >
                 </div> 
                 <?php if((isset($_SESSION['erro_cpf']))){echo('<p class="erro"> "'.$_SESSION['erro_cpf'].'"</p>'); unset($_SESSION['erro_cpf']);}?>
+                <?php if((isset($_SESSION['erro_vazio']))){echo('<p class="erro"> "'.$_SESSION['erro_vazio'].'"</p>'); unset($_SESSION['erro_vazio']);}?>
 
                     <div class="">
                         <button class="bnt">Cadastrar</button> 

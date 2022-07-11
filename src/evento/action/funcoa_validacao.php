@@ -27,12 +27,12 @@ function valida_email($email){
     
 if(filter_var($email, FILTER_VALIDATE_EMAIL)){
     require_once('conexao.php');
-$database = new Database();
-$db = $database->conectar();
-    $sql_cadastro ='SELECT id_pessoas from pessoas where  email="'.$email.'" ;';
-    $query_cadastro = $db->prepare( $sql_cadastro );
-    $query_cadastro->execute();
-    $events = $query_cadastro->fetchAll();
+        $database = new Database();
+        $db = $database->conectar();
+        $sql_cadastro ='SELECT cpf from tbl_cadastro_usuarios where  email="'.$email.'" ;';
+        $query_cadastro = $db->prepare( $sql_cadastro );
+        $query_cadastro->execute();
+        $events = $query_cadastro->fetchAll();
     if(isset($events[0][0])){
         return false;
 

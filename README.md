@@ -19,9 +19,6 @@ O sistema de denúncia é bem simples.
 - [x] Validação do DB
 - [x] Cadastro das denúncias
 - [x] Finalizar o front-end 
-- [x] Validar campos de input
-- [ ] Estruturar melhor o DB
-- [ ] Fazer um sistema de bucar matemático
 - [ ] Fazer um sistema para o usuario alterar seus dados
 - [ ] Fazer um sistema de like e dislike  
 
@@ -51,37 +48,50 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessári
 3.3- "Username" será o : root e não tem senha.<br>
 4- Entre na nova opção que abrir e coloque em esquema caso não esteja.<br>
 5- Selecione o campo Query1 e copie, cole o codigo.<br>
-6- Para cada comando selecione ele e execute individualmente (primeira opção de raio).<br>
-7- Coloque execute um comando de cada vez.<br>
-8 Nessa ordem.(Copie o comando sem as aspas).<br>
+6- Após colar o código clicke na primeira opção de raio.<br>
+7- Nessa ordem.(Copie o comando sem as aspas).<br>
 
-	1- " CREATE DATABASE tbl_cadastro; "
-	
-	2-" use tbl_cadastro; "
-	
-	3-" CREATE TABLE pessoas(
-	    id_pessoas smallint(6) AUTO_INCREMENT ,
-	    nome varchar(30) NOT NULL,
-	    email varchar(50) not null,
-	    number varchar(200) not null,
-	    senha varchar(200) not null,
-	    cpf varchar(12) not null,
-	    PRIMARY KEY (id_pessoas)
+	 "
+create database smartlook;
+use smartlook;
+create table tbl_cadastro_usuarios (
+    nome varchar(30) NOT NULL,
+    nome_completo varchar(64) NOT NULL,
+    email varchar(64) not null,
+    Tel_number varchar(11) not null,
+    cpf varchar(11) not null ,
+    password varchar(64) not null,
+    PRIMARY KEY (cpf)
+);
 
-	    ); "
-		
-	4-" CREATE TABLE denuncias(
-		id smallint(6) AUTO_INCREMENT ,
-		local varchar(30) NOT NULL,
-		tipo varchar(50) not null,
-		endereco varchar(200) not null,
-		complemento varchar(200) not null,
-		img varchar(64) not null,
-		data varchar(64) not null,
-		validacao varchar(64) not null,
-		cpf varchar(64) not null,
-		PRIMARY KEY (id)
-		); "
+create table tbl_login (
+id_login smallint(6) AUTO_INCREMENT ,
+nome varchar(32),
+cpf varchar(11) not null ,
+password varchar(64) not null,
+PRIMARY KEY (id_login)
+
+);
+
+
+CREATE TABLE tbl_denuncias(
+	id smallint(6) AUTO_INCREMENT ,
+	Regiao_adm varchar(32) NOT NULL,
+	tipo_lixo varchar(32) not null,
+	cep_rua varchar(200) not null,
+	complemento varchar(200) not null,
+	img varchar(64) not null,
+	data varchar(32) not null,
+	validacao varchar(1) not null,
+	cpf varchar(64) not null,
+	PRIMARY KEY (id)
+    );
+    
+ALTER TABLE smart.tbl_login ADD CONSTRAINT fkp FOREIGN KEY (cpf) REFERENCES tbl_cadastro_usuarios(cpf);
+ALTER TABLE smart.tbl_denuncias ADD CONSTRAINT fk FOREIGN KEY (cpf) REFERENCES tbl_cadastro_usuarios(cpf);
+
+
+  "
 	
 ### Pronto agora teste fazer um cadastro, login e a denuncia no site.
 

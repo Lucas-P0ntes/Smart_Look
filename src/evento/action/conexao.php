@@ -4,7 +4,7 @@
         private $hostname = '127.0.0.1:3306';
         private $username = 'root';
         private $password = '';
-        private $database = 'tbl_cadastro';
+        private $database = 'smart';
         private $conexao;
 
         public function conectar(){

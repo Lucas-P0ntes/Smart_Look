@@ -3,7 +3,7 @@ require_once('./../src/evento/action/conexao.php');
 $database = new Database();
 $db = $database->conectar();
 
-$sql = "SELECT * from denuncias where validacao='v' ;";
+$sql = "SELECT * from tbl_denuncias where validacao='v' ;";
 
 $sql_pre = $db->prepare($sql);
 $sql_pre -> execute();

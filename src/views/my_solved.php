@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!$_SESSION['nome']){
+if(!$_SESSION['cpf']){
     header("location: ./login/sair.php");
 }
 require_once('./../evento/action/conexao.php');
@@ -8,7 +8,7 @@ require_once("./../componentes/funcoes.php");
 $database = new Database();
 $db = $database->conectar();
 $cpf=$_SESSION['cpf'];
-$sql1 = "SELECT * from denuncias where validacao='s'AND cpf='".$cpf."' ;";
+$sql1 = "SELECT * from tbl_denuncias where validacao='s'AND cpf='".$cpf."' ;";
 
 $sql_pre1 = $db->prepare($sql1);
 $sql_pre1 -> execute();

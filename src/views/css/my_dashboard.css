@@ -88,7 +88,7 @@ flex-direction: column;
     background-color: rgba(255, 255, 255, 0.863);
     margin: 10px;
     box-shadow: 10px 10px 10px   rgba(242, 253, 255, 0.863);
- 
+    width: 100%;
     flex-wrap: wrap;
 }
 .sub_page_box{
@@ -97,7 +97,8 @@ flex-direction: column;
     justify-content: flex-start;
     flex-direction: column;
     width: 70%;
-    background-color: #093028;
+    background-color: #ffffff;
+   
 }
 .sub_page_box_2{
     display: flex;

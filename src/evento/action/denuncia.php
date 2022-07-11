@@ -14,12 +14,13 @@ if( isset($_POST['cidade']) && isset($_POST['tipo']) && isset($_POST['endereco']
     $cpf=$_SESSION['cpf'];
     $extensao = pathinfo($file['name'], PATHINFO_EXTENSION);
     $extensao = strtolower($extensao);
+
     if($extensao === "jpeg" ||  $extensao === "png" ||  $extensao === "jpg" ||  $extensao === "jfif" ){
+
         $nome_file = $file['name'];
         $diretorio= "./../../views/img_denu/";
         move_uploaded_file($_FILES['file']['tmp_name'],$diretorio.$nome_file);
-
-        $sql_cadastro ="INSERT INTO denuncias (id, local, tipo, endereco, complemento, img, data, cpf ,validacao) values (null, '$local', '$tipo', '$endereco', '$complemento','$nome_file','$date','$cpf','v' );";
+        $sql_cadastro ="INSERT INTO tbl_denuncias (id, Regiao_adm, tipo_lixo, cep_rua, complemento, img, data ,validacao,cpf) values (null, '$local', '$tipo', '$endereco', '$complemento','$nome_file','$date','v','$cpf' );";
         $query_cadastro = $db->prepare( $sql_cadastro );
         $query_cadastro->execute();
 

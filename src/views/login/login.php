@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -45,15 +45,18 @@
                         <h1>Login</h1>
                     <div class="input_email">
                         <label for="email">
-                            <input class="input" type="email" name="email" id="email" placeholder="E-mail:" min="5" max="31"  >
+                            <input class="input" type="number" name="email" id="email" placeholder="E-mail:"   >
                         </label>
                     </div>
+                    
+                   <?php if((isset($_SESSION['erro_email']))){echo('<p class="erro"> "'.$_SESSION['erro_email'].'"</p>');unset($_SESSION['erro_email']);}?>
 
                     <div class="input_senha">
                         <label for="senha">
                             <input type="password" class="input"  name="senha" id="senha" placeholder="Senha:" minlength="5" maxlength="30">
                         </label>             
                     </div>  
+                    <?php if((isset($_SESSION['erro_incorreto']))){echo('<p class="erro"> "'.$_SESSION['erro_incorreto'].'"</p>');unset($_SESSION['erro_incorreto']);}?>
 
                     <div class="bnt">
                         <button class="bnt">Entrar</button> 

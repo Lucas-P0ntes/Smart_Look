@@ -29,9 +29,15 @@ if( isset($_POST['nome'])  && isset($_POST['email']) && isset($_POST['tel']) && 
                             $cpf = $_POST['cpf'];
                             
                         
-                            $sql_cadastro ="INSERT INTO pessoas (id_pessoas, nome, email, number, senha, cpf) values (null, '$nome', '$email', '$tel', '$senha' ,'$cpf' );";
+                            $sql_cadastro ="INSERT INTO tbl_cadastro_usuarios (nome, nome_completo, email, tel_number, cpf, password) values ('$nome', '$nome', '$email', '$tel','$cpf', '$senha'  );";
                             $query_cadastro = $db->prepare( $sql_cadastro );
                             $query_cadastro->execute();
+
+                            $sql_cadastro_login ="INSERT INTO tbl_login (nome, cpf, password) values ('$nome','$cpf', '$senha' );";
+                            $query_cadastro_login = $db->prepare( $sql_cadastro_login );
+                            $query_cadastro_login->execute();
+
+                            header('Location: ./../../views/login/login.php');
 
                         }else{
 
@@ -40,18 +46,25 @@ if( isset($_POST['nome'])  && isset($_POST['email']) && isset($_POST['tel']) && 
 
                     }else{
                         $_SESSION['erro_pass']="As senhas não são iguais;";
+                        header('Location: ./../../views/login/cadastrar.php');
                     }
                 }else{
                     $_SESSION['erro_tel']="O formato do telefone está errado;";
+                    header('Location: ./../../views/login/cadastrar.php');
                 }
             }else{
                 $_SESSION['erro_email']="O formato do e-mail está errado;";
+                header('Location: ./../../views/login/cadastrar.php');
             }
 
         }else{
             $_SESSION['erro_nome']="O nome está no formato errado;";
+            header('Location: ./../../views/login/cadastrar.php');
         }
 
+    }else{
+        $_SESSION['erro_vazio']="Algum dos campo foi enviado vazio;";
+        header('Location: ./../../views/login/cadastrar.php');
     }
 
     
@@ -59,4 +72,4 @@ if( isset($_POST['nome'])  && isset($_POST['email']) && isset($_POST['tel']) && 
     
 }
 
- header('Location: ./../../views/login/cadastrar.php');
+//  header('Location: ./../../views/login/cadastrar.php');

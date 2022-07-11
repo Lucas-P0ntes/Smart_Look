@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!$_SESSION['nome']){
+if(!$_SESSION['cpf']){
     header("location: ./login/sair.php");
 }
 require_once('./../evento/action/conexao.php');
@@ -11,20 +11,21 @@ $db = $database->conectar();
 
 
 if(isset($_SESSION["buscar"])){
-$buscar=$_SESSION["buscar"];}
+    $buscar=$_SESSION["buscar"];
+}
 if(empty($buscar)){
-    $sql = "SELECT * from denuncias where  validacao='v' ;";
+    $sql = "SELECT * from tbl_denuncias where  validacao='v' ;";
 
-$sql_pre = $db->prepare($sql);
-$sql_pre -> execute();
-$events = $sql_pre->fetchAll();}
+    $sql_pre = $db->prepare($sql);
+    $sql_pre -> execute();
+    $events = $sql_pre->fetchAll();}
 else{
-    $sql = "SELECT * from denuncias where    validacao='v' And local like '%".$buscar."%' ;";
+    $sql = "SELECT * from tbl_denuncias where    validacao='v' And local like '%".$buscar."%' ;";
 
     $sql_pre = $db->prepare($sql);
     $sql_pre -> execute();
     $events = $sql_pre->fetchAll();
-    $_SESSION["buscar"] ='';
+    unset($_SESSION['buscar']);
     $buscar='';
 }
 
