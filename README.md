@@ -51,7 +51,7 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessári
 6- Após colar o código clicke na primeira opção de raio.<br>
 7- Nessa ordem.(Copie o comando sem as aspas).<br>
 
-´´´
+```
 create database smartlook;
  use smartlook;
 create table tbl_cadastro_usuarios (
@@ -92,7 +92,7 @@ ALTER TABLE smartlook.tbl_login ADD CONSTRAINT fkp FOREIGN KEY (cpf) REFERENCES 
 ALTER TABLE smartlook.tbl_denuncias ADD CONSTRAINT fk FOREIGN KEY (cpf) REFERENCES tbl_cadastro_usuarios(cpf);
 
 
-´´´
+```
 	
 ### Pronto agora teste fazer um cadastro, login e a denuncia no site.
 
