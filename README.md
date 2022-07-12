@@ -51,9 +51,9 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessári
 6- Após colar o código clicke na primeira opção de raio.<br>
 7- Nessa ordem.(Copie o comando sem as aspas).<br>
 
-	 "
+´´´
 create database smartlook;
-use smartlook;
+ use smartlook;
 create table tbl_cadastro_usuarios (
     nome varchar(30) NOT NULL,
     nome_completo varchar(64) NOT NULL,
@@ -61,6 +61,7 @@ create table tbl_cadastro_usuarios (
     Tel_number varchar(11) not null,
     cpf varchar(11) not null ,
     password varchar(64) not null,
+    img_perfil varchar(64) not null,
     PRIMARY KEY (cpf)
 );
 
@@ -87,11 +88,11 @@ CREATE TABLE tbl_denuncias(
 	PRIMARY KEY (id)
     );
     
-ALTER TABLE smart.tbl_login ADD CONSTRAINT fkp FOREIGN KEY (cpf) REFERENCES tbl_cadastro_usuarios(cpf);
-ALTER TABLE smart.tbl_denuncias ADD CONSTRAINT fk FOREIGN KEY (cpf) REFERENCES tbl_cadastro_usuarios(cpf);
+ALTER TABLE smartlook.tbl_login ADD CONSTRAINT fkp FOREIGN KEY (cpf) REFERENCES tbl_cadastro_usuarios(cpf);
+ALTER TABLE smartlook.tbl_denuncias ADD CONSTRAINT fk FOREIGN KEY (cpf) REFERENCES tbl_cadastro_usuarios(cpf);
 
 
-  "
+´´´
 	
 ### Pronto agora teste fazer um cadastro, login e a denuncia no site.
 
