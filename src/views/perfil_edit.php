@@ -53,60 +53,69 @@ $sqlresul=$sql_dados_pessoas ->fetchAll();
                         <div class="div_input">
                             <button class="bnt" >Salvar foto</button> 
                         </div>
-                    </from>
+                    </form>
 
 
                </div>
 
                <div class="info">
+
                 <div class="div_titulo">
                     <h1>Perfil e configurações</h1>
                 </div>
-               <form action="./../../evento/action/cadastro.php" method="post" class="form">
+              
 
-                    <div class="campos_input">
-                        <label for="nome">Nome:</label>
-                            <input class="input" type="text" name="nome" value="<?php echo($sqlresul[0][0]);?>" placeholder="Primeiro nome:"  minlength="5" maxlength="31"  >
-                    </div>
-                    <?php if((isset($_SESSION['erro_nome']))){echo('<p class="erro"> "'.$_SESSION['erro_nome'].'"</p>');unset($_SESSION['erro_nome']);}?>
+                        <form action="./../evento/action/edit_perfil.php" method="post" class="form">
 
-                    <div class="campos_input">
-                        <label for="nome">Nome completo:</label>
-                            <input class="input" type="text" name="nome" value="<?php echo($sqlresul[0][1]);?>" placeholder="Primeiro nome:"  minlength="5" maxlength="31"  >
-                    </div>
-                    <?php if((isset($_SESSION['erro_nome']))){echo('<p class="erro"> "'.$_SESSION['erro_nome'].'"</p>');unset($_SESSION['erro_nome']);}?>
+                            <div class="campos_input">
+                                <label for="nome">Nome:</label>
+                                    <input class="input" type="text" name="nome" value="<?php echo($sqlresul[0][0]);?>" placeholder="Primeiro nome:"  minlength="5" maxlength="31"  >
+                            </div>
+                            <?php if((isset($_SESSION['erro_nome']))){echo('<p class="erro"> "'.$_SESSION['erro_nome'].'"</p>');unset($_SESSION['erro_nome']);}?>
+                        
+                            <div class="campos_input">
+                                <label for="nome">Nome completo:</label>
+                                    <input class="input" type="text" name="nome_completo" value="<?php echo($sqlresul[0][1]);?>" placeholder="Sobrenome:"  minlength="5" maxlength="31"  >
+                            </div>
+                            <?php if((isset($_SESSION['erro_nome']))){echo('<p class="erro"> "'.$_SESSION['erro_nome'].'"</p>');unset($_SESSION['erro_nome']);}?>
 
 
-                    <div class=campos_input>
-                        <label for="email">E-mail:</label>
-                        <input class="input" type="email" name="email" value="<?php echo($sqlresul[0][2]);?>" placeholder="E-mail completo:"  minlength="5" maxlength="31"  >
-                    </div>
-                    <?php if((isset($_SESSION['erro_email']))){echo('<p class="erro"> "'.$_SESSION['erro_email'].'"</p>');unset($_SESSION['erro_email']);}?>
+                            <div class=campos_input>
+                                <label for="email">E-mail:</label>
+                                <input class="input" type="email" name="email" value="<?php echo($sqlresul[0][2]);?>" placeholder="E-mail completo:"  minlength="5" maxlength="31"  >
+                            </div>
+                            <?php if((isset($_SESSION['erro_email']))){echo('<p class="erro"> "'.$_SESSION['erro_email'].'"</p>');unset($_SESSION['erro_email']);}?>
 
-                    <div class=campos_input>
-                        <label for="number">Telefone:</label>
-                        <input type="number" class="input"  name="tel" value="<?php echo($sqlresul[0][3]);?>" placeholder="Telefone pessoal:"  minlength="5" maxlength="30">
-                    </div> 
-                    <?php if((isset($_SESSION['erro_tel']))){echo('<p class="erro"> "'.$_SESSION['erro_tel'].'"</p>');unset($_SESSION['erro_tel']);}?>
+                            <div class=campos_input>
+                                <label for="number">Telefone:</label>
+                                <input type="number" class="input"  name="tel" value="<?php echo($sqlresul[0][3]);?>" placeholder="Telefone pessoal:"  minlength="5" maxlength="30">
+                            </div> 
+                            <?php if((isset($_SESSION['erro_tel']))){echo('<p class="erro"> "'.$_SESSION['erro_tel'].'"</p>');unset($_SESSION['erro_tel']);}?>
 
-                    <div class=campos_input>
-                        <label for="senha">Alterar senha:</label>
-                        <input type="password" class="input"  name="senha1" value="<?php echo($sqlresul[0][4]);?>" placeholder="Senha:"   minlength="5" maxlength="30">
-                    </div> 
+                            <div class=campos_input>
+                                <label for="senha">Alterar senha:</label>
+                                <input type="password" class="input"  name="senha1" value="<?php echo($sqlresul[0][4]);?>" placeholder="Senha:"   minlength="5" maxlength="30">
+                            </div> 
 
-                    <div class=campos_input>
-                        <label for="senha">Confirmar a senha:</label>
-                        <input type="password" class="input"  name="senha2"  placeholder="Repita a senha:" value="<?php echo($sqlresul[0][4]);?>" minlength="5" maxlength="30">
-                    </div>  
-                    <?php if((isset($_SESSION['erro_pass']))){echo('<p class="erro"> "'.$_SESSION['erro_pass'].'"</p>');unset($_SESSION['erro_pass']);}?>
+                            <div class=campos_input>
+                                <label for="senha">Confirmar a senha:</label>
+                                <input type="password" class="input"  name="senha2"  placeholder="Repita a senha:" value="<?php echo($sqlresul[0][4]);?>" minlength="5" maxlength="30">
+                            </div>  
+                        
+                                <input type="hidden"  name="cpf"  value="<?php echo($sqlresul[0][4]);?>" minlength="5" maxlength="30">
+                        
 
-                    <?php if((isset($_SESSION['erro_vazio']))){echo('<p class="erro"> "'.$_SESSION['erro_vazio'].'"</p>'); unset($_SESSION['erro_vazio']);}?>
+                            <?php if((isset($_SESSION['erro_pass']))){echo('<p class="erro"> "'.$_SESSION['erro_pass'].'"</p>');unset($_SESSION['erro_pass']);}?>
 
-                        <div class="">
-                            <button class="bnt">Salvar</button> 
-                        </div>
+                            <?php if((isset($_SESSION['erro_vazio']))){echo('<p class="erro"> "'.$_SESSION['erro_vazio'].'"</p>'); unset($_SESSION['erro_vazio']);}?>
 
-                    </form>  
+                                <div class="">
+                                    <button class="bnt">
+                                        Salvar
+                                    </button> 
+                                </div>
+
+                        </form>  
                     </div>
                 </div>
             </div>
