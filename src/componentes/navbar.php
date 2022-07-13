@@ -20,8 +20,24 @@
            
 
             <div class="perfil">     
-                <img class="imgperfil" src="./../../img/perfil.jfif" alt="Perfil">
-                <?php echo($_SESSION['nome']) ?>
+                <a  href="./../views/perfil_edit.php">
+                <?php
+                $cpf=$_SESSION['cpf'];
+                $sql_dados_pessoas="Select * from tbl_cadastro_usuarios where cpf='".$cpf."';";
+
+                $sql_dados_pessoas=$db->prepare($sql_dados_pessoas);
+                $sql_dados_pessoas->execute();
+                $sqlresul_pessoas=$sql_dados_pessoas ->fetchAll();
+                    if(empty($sqlresul_pessoas[0][6])){
+
+                        echo(' <img class="imgperfil" src="./../views/img_perfil/img_profile_cadastro.PNG" alt="Perfil">');
+                    }else{
+                        echo(' <img class="imgperfil" src="./../views/img_perfil/'.$sqlresul_pessoas[0][6].'" alt="Perfil">');
+                    }
+                ?>
+                   
+                </a>
+               <a a href="./../views/perfil_edit.php"> <?php echo($_SESSION['nome']) ?> </a>
 
                 <ul class="menu">
                     <li>
@@ -29,6 +45,9 @@
                             <span class="material-symbols-outlined">expand_more</span>
                         </a>
                         <ul>
+                            <li><a href="./../views/perfil_edit.php">Editar</a></li>
+                        
+                       
                             <li><a href="./../views/login/sair.php">Sair</a></li>
                         </ul>
                     </li>

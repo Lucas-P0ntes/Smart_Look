@@ -4,7 +4,7 @@
         private $hostname = '127.0.0.1:3306';
         private $username = 'root';
         private $password = '';
-        private $database = 'smart';
+        private $database = 'smartlook';
         private $conexao;
 
         public function conectar(){
