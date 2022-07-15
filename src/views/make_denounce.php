@@ -84,7 +84,7 @@ if(!$_SESSION['cpf']){
                     </div>
 
                     <div class="div_input">
-                        <label for="endereco">CEP:</label>
+                        <label for="endereco">CEP da Rua:</label>
                         <input type="number" class="input"  name="endereco" id="endereco"  minlength="5" maxlength="60">
                     </div> 
 
@@ -108,12 +108,12 @@ if(!$_SESSION['cpf']){
                 <div class="mid_box_right">
                     <div>
                     <h1>A mudança começa por você</h1>
+                </div>
                     <p>
                         Preste atenção nas informações preencidas nos campos.
 
                     </p>
-                </div>
-                    <img style= "height: 300px; width: 330px; border-radius: 5%; "src="./../../img/make_denu.jpg" alt="">
+                    <img style= "height: 270px; width: 300px; border-radius: 50%; "src="./../../img/make_denu.jpg" alt="">
                 
                  
           

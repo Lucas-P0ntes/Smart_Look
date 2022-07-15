@@ -143,6 +143,21 @@ label{
     cursor: pointer;
    
 }
+.bnt-yellow{
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 35px;
+    background-color:#ffd000;
+    box-shadow: 1px 1px 5px #093028;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #093028;
+    text-decoration: none;
+}
 .file{
     width: 250px;
     height: 30px;
@@ -152,4 +167,13 @@ label{
     border: 1px solid #00ccff;
     color:#093028;
 
+}
+.box_bnt_1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 10px;
+    
 }

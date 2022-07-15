@@ -25,9 +25,9 @@ if( isset($_POST['nome'])  && isset($_POST['email']) && isset($_POST['tel']) && 
                             $nome = $_POST['nome'];
                             $email = $_POST['email'];
                             $tel= $_POST['tel'];
-                            $senha = $_POST['senha1'];
+                            $senha1 = $_POST['senha1'];
                             $cpf = $_POST['cpf'];
-                            
+                            $senha=md5($senha1);
                         
                             $sql_cadastro ="INSERT INTO tbl_cadastro_usuarios (nome, nome_completo, email, tel_number, cpf, password) values ('$nome', '$nome', '$email', '$tel','$cpf', '$senha'  );";
                             $query_cadastro = $db->prepare( $sql_cadastro );
@@ -41,7 +41,8 @@ if( isset($_POST['nome'])  && isset($_POST['email']) && isset($_POST['tel']) && 
 
                         }else{
 
-                            $_SESSION['erro_cpf']="O CPF está errado;";
+                            $_SESSION['erro_cpf']="O CPF está errado ou já existe no sistema";
+                            header('Location: ./../../views/login/cadastrar.php');
                         }
 
                     }else{

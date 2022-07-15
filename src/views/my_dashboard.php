@@ -7,10 +7,9 @@ require_once('./../evento/action/conexao.php');
 
 $database = new Database();
 $db = $database->conectar();
+
 $cpf=$_SESSION['cpf'];
 $sql = "SELECT * from tbl_denuncias where  validacao='v' ;";
-
-
 $sql_pre = $db->prepare($sql);
 $sql_pre -> execute();
 $events = $sql_pre->fetchAll();
@@ -62,7 +61,7 @@ $events = $sql_pre->fetchAll();
                             $i = 0;
                             
                             foreach($events as $eventss){
-                                if($i<3){
+                                if($i<1){
                                 echo('
                             <div class="min_box">
                                 

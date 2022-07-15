@@ -5,12 +5,13 @@ require_once('funcoa_validacao.php');
 $database = new Database();
 $db = $database->conectar();
 
-if(isset($_POST['email']) && isset($_POST['senha'])  ){  
+if(isset($_POST['cpf']) && isset($_POST['senha'])  ){  
     
-    $email =$_POST['email'];
-    $senha = $_POST['senha'];
+    $email =$_POST['cpf'];
+    $senha1 = $_POST['senha'];
 
-    if(valida_cpf($_POST['email'])){
+    if(valida_cpf_1($_POST['cpf'])){
+        $senha=md5($senha1);
     
         $sql_login ="select * from tbl_login where cpf = '$email' and password='$senha' ;";
         $query_login = $db->prepare( $sql_login );
@@ -24,12 +25,12 @@ if(isset($_POST['email']) && isset($_POST['senha'])  ){
             header('Location: ./../../views/my_dashboard.php');
             
         }else{
-            $_SESSION['erro_incorreto']="O email ou senha está incorreto;";
+            $_SESSION['erro_incorreto']="O cpf ou senha está incorreto;";
             header('Location: ./../../views/login/login.php');
         }
     
     }else{
-        $_SESSION['erro_email']="O formato do e-mail está errado; Adicione o '.com' no final.";
+        $_SESSION['erro_incorreto']="O cpf ou senha está incorreto;";
         header('Location: ./../../views/login/login.php');
     }
     

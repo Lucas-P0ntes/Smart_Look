@@ -48,7 +48,7 @@ grid-area: page;
     flex-direction: column; 
 }
 .page h1{
-    color: #00aad4;
+    color: #d40000;
     margin-top: 10px;
 
 }
@@ -59,7 +59,7 @@ grid-area: page;
     align-items: center;
     flex-direction: row;
     padding: 30px;
-    box-shadow: 10px 10px 10px   rgba(242, 253, 255, 0.863);
     flex-wrap: wrap;
     width: 90%;
 }
+

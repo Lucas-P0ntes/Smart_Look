@@ -45,7 +45,7 @@ session_start();
                         <h1>Login</h1>
                     <div class="input_email">
                         <label for="email">
-                            <input class="input" type="number" name="email" id="email" placeholder="CPF:"   >
+                            <input class="input" type="number" name="cpf" id="email" placeholder="CPF:"   >
                         </label>
                     </div>
                     

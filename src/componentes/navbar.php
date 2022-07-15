@@ -22,6 +22,11 @@
             <div class="perfil">     
                 <a  href="./../views/perfil_edit.php">
                 <?php
+                require_once('./../evento/action/conexao.php');
+
+                $database = new Database();
+                $db = $database->conectar();
+                
                 $cpf=$_SESSION['cpf'];
                 $sql_dados_pessoas="Select * from tbl_cadastro_usuarios where cpf='".$cpf."';";
 
@@ -45,10 +50,20 @@
                             <span class="material-symbols-outlined">expand_more</span>
                         </a>
                         <ul>
-                            <li><a href="./../views/perfil_edit.php">Editar</a></li>
+                            <li> 
+                                <a href="./../views/perfil_edit.php">
+                                <span class="material-symbols-outlined">person</span>
+                                    Editar
+                                </a>
+                            </li>
                         
                        
-                            <li><a href="./../views/login/sair.php">Sair</a></li>
+                            <li>
+                                <a href="./../views/login/sair.php"><span class="material-symbols-outlined">logout</span>
+                                Sair
+                                </a>
+                            </li>
+
                         </ul>
                     </li>
                 </ul>

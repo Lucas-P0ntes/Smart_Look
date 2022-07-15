@@ -58,7 +58,7 @@ grid-area: page;
 .mid_box_right{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     width: 50%; height: 100%;
     border-radius: 0px 10px  10px 0px;
@@ -75,7 +75,12 @@ grid-area: page;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}.op{
+}
+.div_input label{
+    color:#093028;
+}
+
+.op{
     width: 215px;
     height: 32px;
     background-color:rgb(255, 255, 255);

@@ -109,7 +109,10 @@ $sqlresul=$sql_dados_pessoas ->fetchAll();
 
                             <?php if((isset($_SESSION['erro_vazio']))){echo('<p class="erro"> "'.$_SESSION['erro_vazio'].'"</p>'); unset($_SESSION['erro_vazio']);}?>
 
-                                <div class="">
+                                <div class="box_bnt_1" >
+                                    
+                                        <a href="./my_dashboard.php" class="bnt-yellow">Voltar</a>
+                        
                                     <button class="bnt">
                                         Salvar
                                     </button> 
