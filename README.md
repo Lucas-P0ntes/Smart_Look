@@ -1,6 +1,6 @@
 # Smart-Look
 <h4 align="center"> 
-	🚧  Status: 🚀 Em construção...  🚧
+	🚧  Status: Finalizado🚀  🚧
 </h4>
 
 ## O que é ?
@@ -11,19 +11,17 @@ Esse website tem como objetivo auxiliar e facilitar denúncias contra lixos/entu
 O sistema de denúncia é bem simples.
  1- O usuário vai entrar no site e fazer o cadastro.
  2-Após fazer o cadastro o usuário faz o login no site.
- 3-A primeira tela a será um dashboard no qual poderá fazer todo o gerenciamento de suas denúncias.
- 4- No dashboard vai ter as opções de criar, deletar, visualizar e mudar o status da denúncia ( um CRUD  ).
+ 3-A primeira tela a será um wellcome no qual poderá fazer todo o gerenciamento de suas denúncias.
+ 4- No "wellcome" vai ter as opções de criar, deletar, visualizar e mudar o status da denúncia ( um CRUD  ).
  
  ### Features
 - [x] Cadastro de usuário
 - [x] Validação do DB
-- [x] Cadastro das denúncias
-- [x] Finalizar o front-end 
-- [ ] Fazer um sistema para o usuario alterar seus dados
-- [ ] Fazer um sistema de like e dislike  
+- [x] Cadastro das denúncias 
+- [x] Sistema para o usuario alterar seus dados
 
 ## O que é necessário para rodar ?
-Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessário, mas facilita na manipulação).
+Na utilização de foi utilizado o XAMPP e o MySQL WorkBench(Não é necessário o MySQL WorkBench, mas facilita na manipulação).
 
 ## Como usar ?
 ### Site 
@@ -49,7 +47,7 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench (Não é necessári
 4- Entre na nova opção que abrir e coloque em esquema caso não esteja.<br>
 5- Selecione o campo Query1 e copie, cole o codigo.<br>
 6- Após colar o código clicke na primeira opção de raio.<br>
-7- Nessa ordem.(Copie o comando sem as aspas).<br>
+
 
 ```
 create database smartlook;
@@ -79,12 +77,12 @@ CREATE TABLE tbl_denuncias(
 	id smallint(6) AUTO_INCREMENT ,
 	Regiao_adm varchar(32) NOT NULL,
 	tipo_lixo varchar(32) not null,
-	cep_rua varchar(200) not null,
+	cep_rua varchar(8) not null,
 	complemento varchar(200) not null,
 	img varchar(64) not null,
 	data varchar(32) not null,
 	validacao varchar(1) not null,
-	cpf varchar(64) not null,
+	cpf varchar(11) not null,
 	PRIMARY KEY (id)
     );
     

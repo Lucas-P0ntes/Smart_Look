@@ -85,7 +85,7 @@ if(!$_SESSION['cpf']){
 
                     <div class="div_input">
                         <label for="endereco">CEP da Rua:</label>
-                        <input type="number" class="input"  name="endereco" id="endereco"  minlength="5" maxlength="60">
+                        <input type="number" class="input"  name="endereco" id="endereco" placeholder='Sem o traço o :"-" ' minlength="7" maxlength="9">
                     </div> 
 
                     <div class="div_input">
@@ -97,6 +97,7 @@ if(!$_SESSION['cpf']){
                         <label >Foto</label>
                         <input class="input" type="file" name="file" id="file">
                     </div>
+                    <?php if((isset($_SESSION['erro_vazio']))){echo('<p class="erro"> "'.$_SESSION['erro_vazio'].'"</p>'); unset($_SESSION['erro_vazio']);}?>
 
                         <div class="div_input">
                             <button class="bnt" >Denunciar</button> 

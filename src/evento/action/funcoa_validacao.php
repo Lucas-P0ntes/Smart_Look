@@ -103,5 +103,15 @@ function valida_cpf_1($valor){
     
 }
 
+function valida_cep($cep){
+    if(strlen($cep)==7){
+        return true;
+
+    }else{
+        return false;
+    }
+
+}
+
 ?>
 
