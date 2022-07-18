@@ -65,7 +65,13 @@ $events = $sql_pre->fetchAll();
                 </div>'
             );
             $i ++;
-             }
+            }
+            if($i<=0){
+                echo('<h1  style= color:#00aeff;  font-size:40px;>
+                Ainda não há denúncias ainda :)</h1>
+                '
+            );
+            }
             ?>
 
         </div>

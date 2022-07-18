@@ -16,6 +16,7 @@
     
   
 }
+
 .box{
     display: flex;
     align-items: center;
@@ -26,6 +27,19 @@
     padding: 30px;
     background-color: #fff;
     box-shadow:1px 1px 10px  #093028;
+    width: 40%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    Color: #00ccff;
 }
 .img img{
  
@@ -45,12 +59,13 @@
    Color: #00ccff;
 } 
 label{
-    Color: #00ccff;
+    color:#093028;
  } 
 .campos_input{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin: 5px;
 }
 
 .input{

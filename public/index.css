@@ -38,6 +38,15 @@ grid-area: page;
     box-shadow: 10px 10px 10px   rgba(242, 253, 255, 0.863);
     flex-wrap: wrap;
 }
+.page_cj{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-image: url(./../img/sobre.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .min_box{
     display: flex;
@@ -173,20 +182,23 @@ grid-area: page;
 .caixa{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    width: 500px;
-    height: 600px;
-    padding: 20px;
+    width: 600px;
+    height: 100vh;
+    padding: 15px;
+    background-color: #ffffffda;
     
+    text-decoration:none;
     
 }
 
 .caixa h1{
-    color:  #00aeff; 
+    color:  #00aeff;
+    font-size: 40px;
 }
 .caixa p {
-    font-size: 20px;
+    font-size: 22px;
     color:#093028;
 }
 

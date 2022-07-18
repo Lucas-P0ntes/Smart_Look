@@ -6,17 +6,17 @@ $database = new Database();
 $db = $database->conectar();
 
 if( isset($_POST['cidade']) && isset($_POST['tipo']) && isset($_POST['endereco']) && isset($_POST['complemento']) && isset($_FILES['file'])){  
+   
     $local=$_POST['cidade'];
     $tipo=$_POST['tipo'];
-
     $endereco=$_POST['endereco'];
-    
     $complemento=$_POST['complemento'];
     $file =$_FILES['file'];
     $date = date('d/m/Y');
     $cpf=$_SESSION['cpf'];
     $extensao = pathinfo($file['name'], PATHINFO_EXTENSION);
     $extensao = strtolower($extensao);
+    
     if((!empty($local)  && !empty($tipo)  && !empty($endereco)    && !empty($date)  && !empty($file))){
 
         if(valida_cep($endereco)){
@@ -33,19 +33,19 @@ if( isset($_POST['cidade']) && isset($_POST['tipo']) && isset($_POST['endereco']
                 header('Location: ./../../views/all_denounce.php');
             }
         }else{
-            $_SESSION['erro_vazio']="O formato do CEP está invalido, tente retirar o traço ;";
+            $_SESSION['erro_vazio']='O formato do CEP está invalido, tente retirar o traço ';
             header('Location: ./../../views/make_denounce.php');
 
         }
 
     }else{
-        $_SESSION['erro_vazio']="Algum dos campo foi enviado vazio;";
+        $_SESSION['erro_vazio']='Algum dos campo foi enviado vazio';
         header('Location: ./../../views/make_denounce.php');
         
     }
    
 }else{
-    $_SESSION['erro_vazio']="Algum dos campo foi enviado vazio;";
+    $_SESSION['erro_vazio']='Algum dos campo foi enviado vazio';
         header('Location: ./../../views/make_denounce.php');
         
 }

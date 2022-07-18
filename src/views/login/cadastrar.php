@@ -31,56 +31,68 @@
             </div>
         </div>
         <!-- Fim do navbar -->
-        <div>
+        
         <div class="box">
 
             <div class="img">
                 <img src="./../../../img/img_profile_cadastro.png" alt="">
+                <h2>-Bora fazer um perqueno cadastro para poder usar o site ???</h2>
             </div>
 
                 <form action="./../../evento/action/cadastro.php" method="post" class="form">
+                    
+                    <div class="row">
+                        <div class="campos_input">
+                            <label for="nome">Nome:</label>
+                                <input class="input" type="text" name="nome" placeholder="Primeiro nome:"  minlength="5" maxlength="31"  >
+                        </div>
+                        
+                        <div class="campos_input">
+                            <label for="nome">Nome completo:</label>
+                                <input class="input" type="text" name="nome_completo" placeholder="Completo"  minlength="5" maxlength="31"  >
+                            </div>
+                    </div>
+                    
+                    <div class="row">    
+                        <div class=campos_input>
+                            <label for="email">E-mail:</label>
+                            <input class="input" type="email" name="email" placeholder="E-mail completo:"  minlength="5" maxlength="31"  >
+                        </div>
+                        
+                        <div class=campos_input>
+                            <label for="number">Telefone:</label>
+                            <input type="number" class="input"  name="tel" placeholder="Telefone pessoal:"  minlength="5" maxlength="30">
+                        </div> 
+                        
+                    </div>
+                    
+                    <div class="row">
+                        <div class=campos_input>
+                            <label for="senha">Crie a senha:</label>
+                            <input type="password" class="input"  name="senha1" placeholder="Senha:"   minlength="5" maxlength="30">
+                        </div> 
+                        
+                        <div class=campos_input>
+                            <label for="senha">Confirmer a senha:</label>
+                            <input type="password" class="input"  name="senha2"  placeholder="Repita a senha:"  minlength="5" maxlength="30">
+                        </div>  
 
-                <div class="campos_input">
-                    <label for="nome">Nome:</label>
-                        <input class="input" type="text" name="nome" placeholder="Primeiro nome:"  minlength="5" maxlength="31"  >
-                </div>
-                <?php if((isset($_SESSION['erro_nome']))){echo('<p class="erro"> "'.$_SESSION['erro_nome'].'"</p>');unset($_SESSION['erro_nome']);}?>
-                <div class=campos_input>
-                    <label for="email">E-mail:</label>
-                    <input class="input" type="email" name="email" placeholder="E-mail completo:"  minlength="5" maxlength="31"  >
-                </div>
-                <?php if((isset($_SESSION['erro_email']))){echo('<p class="erro"> "'.$_SESSION['erro_email'].'"</p>');unset($_SESSION['erro_email']);}?>
-                <div class=campos_input>
-                    <label for="number">Telefone:</label>
-                    <input type="number" class="input"  name="tel" placeholder="Telefone pessoal:"  minlength="5" maxlength="30">
-                </div> 
-                <?php if((isset($_SESSION['erro_tel']))){echo('<p class="erro"> "'.$_SESSION['erro_tel'].'"</p>');unset($_SESSION['erro_tel']);}?>
-                <div class=campos_input>
-                    <label for="senha">Crie a senha:</label>
-                    <input type="password" class="input"  name="senha1" placeholder="Senha:"   minlength="5" maxlength="30">
-                </div> 
-
-                <div class=campos_input>
-                    <label for="senha">Confirmer a senha:</label>
-                    <input type="password" class="input"  name="senha2"  placeholder="Repita a senha:"  minlength="5" maxlength="30">
-                </div>  
-                <?php if((isset($_SESSION['erro_pass']))){echo('<p class="erro"> "'.$_SESSION['erro_pass'].'"</p>');unset($_SESSION['erro_pass']);}?>
-                <div class=campos_input>
-                    <label for="senha">CPF:</label>
-                    <input type="number" class="input" placeholder="Coloque os 11 digitos:" name="cpf"   >
-                </div> 
-                <?php if((isset($_SESSION['erro_cpf']))){echo('<p class="erro"> "'.$_SESSION['erro_cpf'].'"</p>'); unset($_SESSION['erro_cpf']);}?>
-                <?php if((isset($_SESSION['erro_vazio']))){echo('<p class="erro"> "'.$_SESSION['erro_vazio'].'"</p>'); unset($_SESSION['erro_vazio']);}?>
-
+                    </div>
+                    
+                    <div class=campos_input>
+                        <label for="senha">CPF:</label>
+                        <input type="number" class="input" placeholder="Coloque os 11 digitos:" name="cpf"   >
+                    </div> 
+                    
+                    
+                    
+                    <?php if((isset($_SESSION['arry_error']))){echo('<p class="erro"> "'.$_SESSION['arry_error'].'"</p>');unset($_SESSION['arry_error']);}?>
+                    
                     <div class="">
                         <button class="bnt">Cadastrar</button> 
                     </div>
-                
             </form>  
-
-            <a style="margin:5px" href="login.php">Fazer Login</a>
-
+                <a style="margin:5px" href="login.php">Fazer Login</a>
             </div>
-        </div>
     </body>
 </html>

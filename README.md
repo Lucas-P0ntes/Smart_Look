@@ -42,7 +42,7 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench(Não é necessário
 2- Ao lado do nome MySQL Connections tem uma bolinha com sinal de +.<br>
 3- Ao apertar essa bolinha abrira uma caixa de config para a New Connection.<br>
 3.1- No campo "Connection Name" você ira colocar o nome desse servidor.<br>
-3.2- "HostName" geralmente é: 127.0.0.1 e "port" Será a : 3306 (Caso não for, olhe no xampp).<br>
+3.2- "HostName" geralmente é: 127.0.0.1 e "port" Será a : 3306 (Caso não, olhe no xampp).<br>
 3.3- "Username" será o : root e não tem senha.<br>
 4- Entre na nova opção que abrir e coloque em esquema caso não esteja.<br>
 5- Selecione o campo Query1 e copie, cole o codigo.<br>
