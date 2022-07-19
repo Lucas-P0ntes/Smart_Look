@@ -16,7 +16,7 @@
         <a href="./index.php"><h1>SMART LOOK</h1></a>
             <div class="navigacion">
                 <a  href="./index.php">Home</a>
-                <a href="./denuncias.php">Denuncias</a>
+                <a href="./denuncias.php">Ultimas Denuncias</a>
                 <a  style="color:#00ccff;"href="#">Conheça o projeto</a>
             </div> 
         </div>

@@ -69,7 +69,7 @@ label{
 }
 
 .input{
-    width: 220px;
+    width: 250px;
     height: 30px;
     background-color:rgb(255, 255, 255);
     border-radius: 3px;
@@ -156,11 +156,10 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 220px;
-    height: 35px;
-    background-color:rgb(236, 87, 87);
+    font-weight: 600;
+    height: 15px;
+    background-color:rgb(255, 255, 255);
     border-radius: 3px;
     margin: 5px;
-    border: 1px solid #ff0000;
-    color:#000000;
+    color:#ff0000;
 }

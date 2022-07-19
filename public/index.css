@@ -170,6 +170,7 @@ grid-area: page;
     font-size: 25px;
     cursor: pointer;
     border: #00aeff;
+    text-decoration: none;
 }
 .teste2 img{ 
     display: flex;

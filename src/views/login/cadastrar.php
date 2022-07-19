@@ -16,7 +16,7 @@
         <a href="./../../../public/index.php"><h1>SMART LOOK</h1></a>
             <div class="navigacion">
                 <a  href="./../../../public/index.php">Home</a>
-                <a href="./../../../public/denuncias.php">Denuncias</a>
+                <a href="./../../../public/denuncias.php">Ultimas Denuncias</a>
                 <a  href="./../../../public/cj.php">Conheça o projeto</a>
             </div> 
         </div>
@@ -36,9 +36,23 @@
 
             <div class="img">
                 <img src="./../../../img/img_profile_cadastro.png" alt="">
-                <h2>-Bora fazer um perqueno cadastro para poder usar o site ???</h2>
+                <h2>-Bora fazer um pequeno cadastro para poder usar o site ???</h2>
+               
             </div>
+            <?php 
+                        if(isset($_SESSION['arry_error'])){
+                            
+                            $arry_error =  $_SESSION['arry_error'];
+                        
+                            foreach($arry_error as $arry_erro){
 
+                                echo('<p class="erro"> '.$arry_erro.'   </p>');
+                     
+                            }
+                            unset($arry_error);
+                            unset($_SESSION['arry_error']);
+                        }
+                    ?>
                 <form action="./../../evento/action/cadastro.php" method="post" class="form">
                     
                     <div class="row">
@@ -86,7 +100,7 @@
                     
                     
                     
-                    <?php if((isset($_SESSION['arry_error']))){echo('<p class="erro"> "'.$_SESSION['arry_error'].'"</p>');unset($_SESSION['arry_error']);}?>
+              
                     
                     <div class="">
                         <button class="bnt">Cadastrar</button> 

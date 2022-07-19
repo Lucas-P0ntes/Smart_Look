@@ -37,6 +37,7 @@ Na utilização de foi utilizado o XAMPP e o MySQL WorkBench(Não é necessário
 3.2- Entre na pasta htdocs.<br>
 3.3- Agora dentro da pasta htdocs crie uma pasta e coloque os arquivos baixados desse github(Tem uma opção de baixar o zip no botão:"code".).<br>
 4- Agora abra seu navegador e color o caminho "http://localhost/Nome_da_pasta_criada_na_opção_3.3/public/index.php" <br>
+
 ### Pronto o site já está funcionando, agora vamos configurar o banco de dados.<br>
 1- Abra o MySQL Workbanch <br>
 2- Ao lado do nome MySQL Connections tem uma bolinha com sinal de +.<br>
@@ -113,7 +114,5 @@ ALTER TABLE smartlook.tbl_denuncias ADD CONSTRAINT fk FOREIGN KEY (cpf) REFERENC
 
 ### Mostrando a filtragem dos campos
 ![Filtragem](https://user-images.githubusercontent.com/80328167/172514051-80b122d6-06d1-47b1-aaf0-bfc40dd1644b.PNG)
-
-
-
+        
 

@@ -19,7 +19,7 @@ session_start();
         <a href="./../../../public/index.php"><h1>SMART LOOK</h1></a>
             <div class="navigacion">
                 <a  href="./../../../public/index.php">Home</a>
-                <a href="./../../../public/denuncias.php">Denuncias</a>
+                <a href="./../../../public/denuncias.php">Ultimas Denuncias</a>
                 <a  href="./../../../public/cj.php">Conheça o projeto</a>
             </div> 
         </div>

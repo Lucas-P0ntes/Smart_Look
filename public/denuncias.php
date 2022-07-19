@@ -28,7 +28,7 @@ $events = $sql_pre->fetchAll();
         <a href="./index.php"><h1>SMART LOOK</h1></a>
             <div class="navigacion">
                 <a   href="./index.php">Home</a>
-                <a style="color:#00ccff;" href="#">Denuncias</a>
+                <a style="color:#00ccff;" href="#">Ultimas Denuncias</a>
                 <a href="./Cj.php">Conheça o projeto</a>
             </div> 
         </div>

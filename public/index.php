@@ -17,7 +17,7 @@
         <a href="./index.php"><h1>SMART LOOK</h1></a>
             <div class="navigacion">
                 <a  style="color:#00ccff;" href="#">Home</a>
-                <a href="./denuncias.php">Denuncias</a>
+                <a href="./denuncias.php">Ultimas Denuncias</a>
                 <a href="./Cj.php">Conheça o projeto</a>
             </div> 
         </div>
@@ -60,7 +60,7 @@
                    Observe com atenção sua cidade. As vezes aqueles mal odor ou amimais indesejados podem 
                    sair de pequenos montantes de lixos.
                 </p>
-                <button class="bnt_denuciar2">Saiba mais</button>
+                <a href="./Cj.php" class="bnt_denuciar2">Saiba mais</a>
             </div>
 
         </div>
