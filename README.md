@@ -96,6 +96,7 @@ ALTER TABLE smartlook.tbl_denuncias ADD CONSTRAINT fk FOREIGN KEY (cpf) REFERENC
 ### Pronto agora teste fazer um cadastro, login e a denuncia no site.
 
 ## Algumas Imgens do site:
+![182431474-67746b37-09f5-42a6-a792-260b5ae87c38](https://user-images.githubusercontent.com/80328167/182433116-03330bc0-cd53-4ee1-ad5f-88761504036f.png)
 
 ### Home
 ![home1](https://user-images.githubusercontent.com/80328167/172514055-6bffe9b8-ca28-4d4b-b1de-e7f48cab5d9b.PNG)
