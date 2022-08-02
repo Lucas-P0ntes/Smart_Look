@@ -137,5 +137,6 @@ ALTER TABLE smartlook.tbl_denuncias ADD CONSTRAINT fk FOREIGN KEY (cpf) REFERENC
 ### Alteração das informações do perfil
 
  ![182431510-1961b973-30c7-4681-9d4f-bfd924e88370](https://user-images.githubusercontent.com/80328167/182440809-1d248c37-f9c5-45a4-8769-6b363bbec1f5.png)
-
+### Grafios Das denuncias
+![graficos](https://user-images.githubusercontent.com/80328167/182441552-16d4420d-937b-4be8-959e-e40cc46c56d7.PNG)
 
