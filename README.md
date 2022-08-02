@@ -96,24 +96,46 @@ ALTER TABLE smartlook.tbl_denuncias ADD CONSTRAINT fk FOREIGN KEY (cpf) REFERENC
 ### Pronto agora teste fazer um cadastro, login e a denuncia no site.
 
 ## Algumas Imgens do site:
-![182431474-67746b37-09f5-42a6-a792-260b5ae87c38](https://user-images.githubusercontent.com/80328167/182433116-03330bc0-cd53-4ee1-ad5f-88761504036f.png)
 
 ### Home
-![home1](https://user-images.githubusercontent.com/80328167/172514055-6bffe9b8-ca28-4d4b-b1de-e7f48cab5d9b.PNG)
+![182431515-35fd6717-7d63-42aa-baa2-e1274b91a672](https://user-images.githubusercontent.com/80328167/182434544-593a7d5d-658c-4fd6-b62e-b40cf50bda48.png)
+
 
 ### Home parte de baixo
-![home2](https://user-images.githubusercontent.com/80328167/172514059-204773d4-7d83-4844-a9e0-7bc2230774f5.PNG)
+![182431537-bf56ccd3-e894-4e33-b9aa-019ef17c159a](https://user-images.githubusercontent.com/80328167/182434573-bbeb49df-9ed4-466e-8ab3-cf3fb7189d61.png)
+
+### Conheça o projeto
+
+![182431482-568be85a-c92d-4337-af97-141bca053004](https://user-images.githubusercontent.com/80328167/182435436-7c1fb969-7612-4aba-9053-c9f3102a6c89.png)
 
 ### Mostrando o campo de denuncias
-![Denuncias](https://user-images.githubusercontent.com/80328167/172514049-4c42d352-532f-4965-8ef8-494ea86bba90.PNG)
+![182431504-ccfaefeb-07ec-49cc-97ad-e8b64b335f76](https://user-images.githubusercontent.com/80328167/182440539-a92bbcf4-13f3-40a8-a328-702f6929a601.png)
+### Mostrando o campo de denuncias Caso logado
+![182431507-a4de8917-b30b-4434-856e-c3f56927131b](https://user-images.githubusercontent.com/80328167/182440605-16a40b45-b298-4143-b9e6-a02d8f04d80d.png)
+
 
 ### login
-![Login](https://user-images.githubusercontent.com/80328167/172514062-eedff114-57f0-40e4-b527-0b1bbd9e7ae9.PNG)
+![182431546-039c2dfc-85d6-4707-9a02-d75dd5aa5202](https://user-images.githubusercontent.com/80328167/182434707-6fe403db-71f6-485c-b883-44247b9d7ee0.png)
+
+### Cadastro
+![182431571-7c2d6c3a-981e-4342-b604-55e9222fa2df](https://user-images.githubusercontent.com/80328167/182434799-7d7046b0-3fae-4cee-90bf-71643aef9684.png)
 
 ### Mostrando o DashBoard
-![DashBoard](https://user-images.githubusercontent.com/80328167/172514047-061bc82f-e5ca-4fd4-8d30-2d149804f66f.PNG)
+![182431500-c777afd1-203d-4bea-a44b-84a35e26a295](https://user-images.githubusercontent.com/80328167/182434989-7753ee2d-5329-4a91-b373-aece47d7e580.png)
 
-### Mostrando a filtragem dos campos
-![Filtragem](https://user-images.githubusercontent.com/80328167/172514051-80b122d6-06d1-47b1-aaf0-bfc40dd1644b.PNG)
-        
+### Tela do usuario que criou uma denuncias
+![182431551-ae68c361-e58d-4a35-a5fa-dec28f401954](https://user-images.githubusercontent.com/80328167/182441001-d2a80e73-8754-479b-adec-7ad4fbe0ead6.png)
+![182431558-d1cc0d18-e0eb-473a-bd![182431566-8ac06310-cd5e-4d06-ac3a-039ec0765944](https://user-images.githubusercontent.com/80328167/182441040-7205a115-5056-4991-a59d-8eac792e9d0d.png)
+![182431566-8ac06310-cd5e-4d06-ac3a-039ec0765944](https://user-images.githubusercontent.com/80328167/182441180-22be82c4-2e1a-4aa7-981f-27cd09880193.png)
+
+
+
+### Cadastro de denuncias
+
+![182431474-67746b37-09f5-42a6-a792-260b5ae87c38](https://user-images.githubusercontent.com/80328167/182435123-a90d2335-60fd-46f6-a751-a76aca166676.png)
+
+### Alteração das informações do perfil
+
+ ![182431510-1961b973-30c7-4681-9d4f-bfd924e88370](https://user-images.githubusercontent.com/80328167/182440809-1d248c37-f9c5-45a4-8769-6b363bbec1f5.png)
+
 
